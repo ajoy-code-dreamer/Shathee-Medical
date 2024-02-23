@@ -11,11 +11,11 @@
   --primary-font: "Noto Sans", sans-serif;
   /* === font family === */
   /* === font weight === */
-  --light-weight: 300;
-  --regular-weight: 400;
-  --medium-weight: 500;
-  --semi-bold-weight: 600;
-  --bold-weight: 700;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
   /* === font weight === */
   /* === font size === */
   --heading-font-size-1: 64px;
@@ -23,10 +23,12 @@
   --body-font-size: 24px;
   --pera-font-size-1: 20px;
   --pera-font-size-2: 16px;
+  --btn-font-size: 12px;
   /* === font size === */
   /* === colors === */
   --white-clr: #fff;
   --black-clr: #000;
+  --transparent-clr: transparent;
   --theme-blue-clr: #f2f5ff;
   --primary-blue-clr: #325cf4;
   --border-clr: rgba(50, 92, 244, 0.3);
@@ -40,6 +42,7 @@
   /* === method === */
   --transition: all 0.3s linear;
   --text-uppercase: uppercase;
+  --text-capitalize: capitalize;
   /* === method === */
 }
 /* ============ css variables ============= */
@@ -86,13 +89,15 @@ body {
   margin: 0 auto;
 }
 .common_btn {
-  font-weight: var(--bold-weight);
-  font-size: var(--pera-font-size-1);
-  text-transform: var(--text-uppercase);
+  font-family: var(--primary-font);
+  font-weight: var(--fw-bold);
+  font-size: var(--btn-font-size);
+  text-transform: var(--text-capitalize);
   color: var(--white-clr);
   background-color: var(--primary-blue-clr);
-  padding: 15px 50px;
-  border: 1px solid var(--primary-blue-clr);
+  padding: 7px 10px;
+  border: 1px solid var(--transparent-clr);
+  cursor: pointer;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -111,75 +116,7 @@ body {
 }
 
 /* ============= common css end here ================ */
-/* =========== navbar css start here ========== */
-#nav {
-  padding: 35px 0 42px 0;
-  background-color: var(--white-clr);
-  box-shadow: 0px 6px 20px 0px rgba(50, 92, 244, 0.1);
-}
-.nav_menuWrapper {
-  column-gap: 32px;
-  align-items: center;
-}
-.nav-link {
-  font-weight: var(--bold-weight);
-  font-size: var(--pera-font-size-1);
-  text-transform: var(--text-uppercase);
-  color: var(--text-gray-clr);
-  transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
-}
-.nav-link:hover {
-  color: var(--primary-blue-clr);
-}
-/* =========== navbar css end here ========== */
-/* =========== banner section css start here ========== */
-#banner {
-  padding: 136px 0 0 0;
-  background-color: var(--theme-blue-clr);
-  background-image: url(../images/banner_bg.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-}
-.banner_wrapper {
-  position: relative;
-}
-.banner_contentWrapper h3{
-  color: var(--text-gray-clr);
-  font-size: var(--heading-font-size-2);
-  font-weight: var(--semi-bold-weight);
-  padding-bottom: 10px;
-}
-.banner_contentWrapper h2{
-  color: var(--primary-blue-clr);
-  font-size: var(--heading-font-size-1);
-  font-weight: var(--semi-bold-weight);
-  padding-bottom: 20px;
-}
-.banner_contentWrapper p{
-  color: var(--text-gray-clr);
-  font-size: var(--pera-font-size-1);
-  font-weight: var(--regular-weight);
-  padding-bottom: 25px;
-}
-.banner_btn {
-  margin-bottom: 139px;
-}
-.banner_imageWrapper {
-  position: relative;
-}
-.banner_img {
-  position: absolute;
-  right: -10%;
-  bottom: 0;
-}
 
-/* =========== banner section css start here ========== */
 /* ===========  section css end here ========== */
 /* ===========  section css end here ========== */
 
