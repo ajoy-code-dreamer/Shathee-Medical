@@ -204,5 +204,133 @@ body {
 .nav-link.active .nav_icon {
   color: var(--white-clr);
 }
+/* ==== right side design ====== */
+.main_dashboardWrapper {
+  padding: 40px 30px;
+}
+.user_interfaceWrapper {
+  padding: 44px 48px 44px 48px;
+  background-color: #e0e9ff;
+  border-radius: 20px;
+  align-items: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}
+.user_appointmentWrapper {
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.interface_commonDialog {
+  font-weight: var(--fw-regular);
+  font-size: var(--pera-font-size-2);
+  color: var(--text-medium-clr);
+  padding-bottom: 10px;
+}
+.interface_nameWrapper {
+  font-weight: var(--fw-bold);
+  font-size: 32px;
+  color: #1d2b5f;
+}
+.interface_name {
+  color: var(--primary-blue-clr);
+}
+.user_appointment {
+  font-weight: var(--fw-bold);
+  font-size: 18px;
+  color: var(--primary-blue-clr);
+  padding-bottom: 7px;
+}
+.user_appointmentDate{
+  padding-bottom: 6px;
+}
+.appointmentIcon{
+  padding-right: 9px;
+}
+.user_appointmentDate,
+.user_appointmentTime {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: #1D2B5F;
+}
+.dashboard_middlePartWrapper{
+  margin-right: 20px;
+}
+.feeling_partWrapper{
+  padding: 40px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.feeling_heading{
+  font-weight: var(--fw-regular);
+  font-size: 24px;
+  color:#818181;
+  padding-bottom: 30px;
+}
+.feeling_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 17px;
+  cursor: pointer;
+}
+.feeling_imageWrapper{
+  width: 63px;
+  height: 63px;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.feeling_item:hover .feeling_imageWrapper{
+  background-color: #E0E9FF;
+}
+.feeling_image{
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.feeling_caption{
+  font-size: var(--pera-font-size-2);
+  font-weight: var(--fw-bold);
+  color: #1D2B5F;
+  position: relative;
+}
+.feeling_item:hover .feeling_caption::after{
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 1px;
+  background-color: #1D2B5F;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* ==== right side design ====== */
+
 
 /* ===========  dashboard page css end here ========== */
