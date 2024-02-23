@@ -20,7 +20,7 @@
   /* === font size === */
   --heading-font-size-1: 64px;
   --heading-font-size-2: 48px;
-  --body-font-size: 20px;
+  --body-font-size: 24px;
   --pera-font-size-1: 20px;
   --pera-font-size-2: 16px;
   /* === font size === */
@@ -79,13 +79,13 @@ img {
 }
 body {
   position: relative;
+  font-family: var(--primary-font);
 }
 .container {
   max-width: 1280px;
   margin: 0 auto;
 }
 .common_btn {
-  font-family: var(--primary-font);
   font-weight: var(--bold-weight);
   font-size: var(--pera-font-size-1);
   text-transform: var(--text-uppercase);
@@ -117,13 +117,11 @@ body {
   background-color: var(--white-clr);
   box-shadow: 0px 6px 20px 0px rgba(50, 92, 244, 0.1);
 }
-
 .nav_menuWrapper {
   column-gap: 32px;
   align-items: center;
 }
 .nav-link {
-  font-family: var(--primary-font);
   font-weight: var(--bold-weight);
   font-size: var(--pera-font-size-1);
   text-transform: var(--text-uppercase);
@@ -134,7 +132,62 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.nav-link:hover{
+.nav-link:hover {
   color: var(--primary-blue-clr);
 }
 /* =========== navbar css end here ========== */
+/* =========== banner section css start here ========== */
+#banner {
+  padding: 136px 0 0 0;
+  background-color: var(--theme-blue-clr);
+  background-image: url(../images/banner_bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.banner_wrapper {
+  position: relative;
+}
+.banner_contentWrapper h3{
+  color: var(--text-gray-clr);
+  font-size: var(--heading-font-size-2);
+  font-weight: var(--semi-bold-weight);
+  padding-bottom: 10px;
+}
+.banner_contentWrapper h2{
+  color: var(--primary-blue-clr);
+  font-size: var(--heading-font-size-1);
+  font-weight: var(--semi-bold-weight);
+  padding-bottom: 20px;
+}
+.banner_contentWrapper p{
+  color: var(--text-gray-clr);
+  font-size: var(--pera-font-size-1);
+  font-weight: var(--regular-weight);
+  padding-bottom: 25px;
+}
+.banner_btn {
+  margin-bottom: 139px;
+}
+.banner_imageWrapper {
+  position: relative;
+}
+.banner_img {
+  position: absolute;
+  right: -10%;
+  bottom: 0;
+}
+
+/* =========== banner section css start here ========== */
+/* ===========  section css end here ========== */
+/* ===========  section css end here ========== */
+
+/* ===========  section css end here ========== */
+/* ===========  section css end here ========== */
+
+/* ===========  section css end here ========== */
+/* ===========  section css end here ========== */
+
+/* ===========  section css end here ========== */
+/* ===========  section css end here ========== */
