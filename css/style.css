@@ -490,6 +490,44 @@ body {
 .sugar_cardWrapper {
   margin-right: 0;
 }
+.reportSelect {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.test_select select {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 10px 65px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+.test_input input,.test_date input{
+  height: 44px;
+  padding: 10px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.test_input label{
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: var(--card-text-clr);
+  padding-bottom: 6px;
+}
+
+
 .dashboard_rightPartWrapper {
   margin-left: 30px;
 }
