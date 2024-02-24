@@ -344,6 +344,7 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   margin-bottom: 20px;
+  margin-right: 20px;
 }
 .bp_titleWrapper {
   display: flex;
@@ -405,6 +406,7 @@ body {
   -o-border-radius: 20px;
   text-align: center;
   font-family: var(--primary-font);
+  margin-right: 20px;
 }
 .healthScore_title {
   font-weight: var(--fw-bold);
