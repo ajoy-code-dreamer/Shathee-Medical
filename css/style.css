@@ -129,6 +129,7 @@ body {
 .sidebar_wrapper {
   background-color: var(--white-clr);
   padding: 40px 20px 0 38px;
+  margin-right: 30px;
 }
 .brand_logo {
   padding-bottom: 40px;
@@ -210,7 +211,7 @@ body {
 }
 /* ==== right side design ====== */
 .main_dashboardWrapper {
-  padding: 40px 30px;
+  margin: 40px 30px 40px 20px;
 }
 .user_interfaceWrapper {
   padding: 44px 48px 44px 48px;
@@ -221,7 +222,7 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  margin-bottom: 20px;
+  margin: 0 10px 10px 0;
 }
 .user_appointmentWrapper {
   font-family: var(--primary-font);
@@ -259,10 +260,10 @@ body {
   font-size: 14px;
   color: #1d2b5f;
 }
-.dashboard_middlePartWrapper {
-  margin-right: 20px;
+.dashboard_cardItem {
+  margin: 10px 20px;
 }
-.feeling_partWrapper {
+.feeling_cardWrapper {
   padding: 40px;
   background-color: var(--white-clr);
   border-radius: 20px;
@@ -272,7 +273,7 @@ body {
   -o-border-radius: 20px;
   font-family: var(--primary-font);
   text-transform: var(--text-capitalize);
-  margin-bottom: 20px;
+  margin: 10px 0px 10px 10px;
 }
 .feeling_heading {
   font-weight: var(--fw-regular);
@@ -343,8 +344,6 @@ body {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  margin-bottom: 20px;
-  margin-right: 20px;
 }
 .bp_titleWrapper {
   display: flex;
@@ -491,6 +490,9 @@ body {
 .sugar_cardWrapper {
   margin-right: 0;
 }
+.dashboard_rightPartWrapper {
+  margin-left: 30px;
+}
 .weight_cardWrapper {
   padding: 27px 31px;
   display: flex;
@@ -503,7 +505,6 @@ body {
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
   font-family: var(--primary-font);
-  margin-bottom: 20px;
 }
 .weight_heading {
   font-weight: var(--fw-bold);
@@ -590,8 +591,61 @@ body {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
-.download_btn.download_btn:hover{
+.download_btn.download_btn:hover {
   color: var(--btn-bg-ylw);
+}
+.recipe_cardWrapper {
+  background-color: var(--white-clr);
+  padding: 22px 26px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.recipe_titile {
+  font-weight: var(--fw-bold);
+  font-size: 32px;
+  color: var(--card-text-clr);
+}
+.recipe_date {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: #a3aed0;
+  padding-bottom: 17px;
+}
+.recipe_routineWrapper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  padding-bottom: 15px;
+}
+.recipe_routineItem {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.recipe_playBtn {
+  color: var(--card-text-clr);
+  font-size: 30px;
+}
+.recipe_name {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--card-text-clr);
+}
+.recipe_time {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: var(#a3aed0);
+}
+.view_allRecipe {
+  text-align: end;
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--primary-blue-clr);
 }
 
 /* ==== right side design ====== */
