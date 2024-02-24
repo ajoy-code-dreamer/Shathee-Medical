@@ -456,9 +456,9 @@ body {
   color: var(--card-text-clr);
   position: relative;
 }
-.healthScore_item::before{
+.healthScore_item::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 12px;
   height: 12px;
   top: 50%;
@@ -475,9 +475,125 @@ body {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
 }
-.healthScore_item:nth-child(2)::before{
+.healthScore_item:nth-child(2)::before {
   background-color: var(--btn-bg-ylw);
 }
+.bp_cardWrapper .common_btn {
+  margin-top: 13px;
+  padding: 7px 8px;
+  background-color: var(--btn-bg-ylw);
+}
+.others_healthCondition .common_btn {
+  margin-top: 13px;
+  padding: 7px 17px;
+  background-color: var(--btn-bg-grn);
+}
+.sugar_cardWrapper {
+  margin-right: 0;
+}
+.weight_cardWrapper {
+  padding: 27px 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+  margin-bottom: 20px;
+}
+.weight_heading {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--card-text-clr);
+  padding-bottom: 13px;
+}
+.weight_detailsDate {
+  padding: 7px 10px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  color: var(--card-text-clr);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.weight_detailsDate i {
+  padding-right: 10px;
+  font-size: 15px;
+}
+.weight_detailsContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+  margin-bottom: 12px;
+}
+.weight_detailsItem {
+  width: 288px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 13px 10px 20px;
+  background-color: #f4f6ff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.weight_date {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+.weight_result {
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+.weight_feedback.common_btn {
+  padding: 7px 10px;
+  font-size: 14px;
+  background-color: var(--btn-bg-grn);
+}
+.weight_detailsItem:nth-child(1) {
+  background-color: unset;
+}
+.weight_detailsItem:nth-child(1) .weight_result {
+  font-weight: var(--fw-regular);
+}
+.weight_detailsItem:nth-child(2) .weight_feedback.common_btn {
+  background-color: var(--btn-bg-dng);
+  padding: 7px 18px;
+}
+.download_btn.download_btn {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 22px;
+  background-color: var(--card-text-clr);
+  padding: 16px 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.download_btn.download_btn:hover{
+  color: var(--btn-bg-ylw);
+}
+
 /* ==== right side design ====== */
 
 /* ===========  dashboard page css end here ========== */
