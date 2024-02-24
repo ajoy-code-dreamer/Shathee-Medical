@@ -39,6 +39,10 @@
   --text-gray-clr: #3d3d3d;
   --baseline-gray-clr: #d9d9d9;
   --text-medium-clr: #6276b6;
+  --card-text-clr: #1d2b5f;
+  --btn-bg-grn: #05cd99;
+  --btn-bg-ylw: #fea200;
+  --btn-bg-dng: #ff725e;
   /* === colors === */
   /* === method === */
   --transition: all 0.3s linear;
@@ -99,11 +103,11 @@ body {
   padding: 7px 10px;
   border: 1px solid var(--transparent-clr);
   cursor: pointer;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
@@ -111,7 +115,7 @@ body {
   -o-transition: var(--transition);
 }
 .common_btn:hover {
-  color: var(--primary-blue-clr);
+  color: var(--black-clr);
   background-color: var(--white-clr);
   border: 1px solid var(--border-clr);
 }
@@ -243,22 +247,22 @@ body {
   color: var(--primary-blue-clr);
   padding-bottom: 7px;
 }
-.user_appointmentDate{
+.user_appointmentDate {
   padding-bottom: 6px;
 }
-.appointmentIcon{
+.appointmentIcon {
   padding-right: 9px;
 }
 .user_appointmentDate,
 .user_appointmentTime {
   font-weight: var(--fw-regular);
   font-size: 14px;
-  color: #1D2B5F;
+  color: #1d2b5f;
 }
-.dashboard_middlePartWrapper{
+.dashboard_middlePartWrapper {
   margin-right: 20px;
 }
-.feeling_partWrapper{
+.feeling_partWrapper {
   padding: 40px;
   background-color: var(--white-clr);
   border-radius: 20px;
@@ -268,21 +272,22 @@ body {
   -o-border-radius: 20px;
   font-family: var(--primary-font);
   text-transform: var(--text-capitalize);
+  margin-bottom: 20px;
 }
-.feeling_heading{
+.feeling_heading {
   font-weight: var(--fw-regular);
   font-size: 24px;
-  color:#818181;
+  color: #818181;
   padding-bottom: 30px;
 }
-.feeling_item{
+.feeling_item {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 17px;
   cursor: pointer;
 }
-.feeling_imageWrapper{
+.feeling_imageWrapper {
   width: 63px;
   height: 63px;
   background-color: transparent;
@@ -300,28 +305,28 @@ body {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.feeling_item:hover .feeling_imageWrapper{
-  background-color: #E0E9FF;
+.feeling_item:hover .feeling_imageWrapper {
+  background-color: #e0e9ff;
 }
-.feeling_image{
+.feeling_image {
   width: 52px;
   height: 52px;
   overflow: hidden;
   object-fit: cover;
   object-position: center;
 }
-.feeling_caption{
+.feeling_caption {
   font-size: var(--pera-font-size-2);
   font-weight: var(--fw-bold);
-  color: #1D2B5F;
+  color: #1d2b5f;
   position: relative;
 }
-.feeling_item:hover .feeling_caption::after{
+.feeling_item:hover .feeling_caption::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 18px;
   height: 1px;
-  background-color: #1D2B5F;
+  background-color: #1d2b5f;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -330,7 +335,147 @@ body {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
+.bp_cardWrapper {
+  padding: 31px 40px 17px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}
+.bp_titleWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.bp_cardMeasurement {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: #1d2b5f;
+}
+.bp_cardHeading,
+.diastolic_bp {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: #1d2b5f;
+}
+.bp_logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 43, 95, 0.1);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-bottom: 25px;
+}
+.bp_cardWrapper .common_btn {
+  padding: 7px 27px;
+  background-color: var(--btn-bg-dng);
+  margin-bottom: 10px;
+}
+.bp_graph {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.last_measurement {
+  font-family: var(--primary-font);
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: #818181;
+}
+.healthScore_cardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 37px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+.healthScore_title {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--card-text-clr);
+  padding-bottom: 4px;
+}
+.healthScore_lastDate {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: #818181;
+  padding-bottom: 40px;
+}
+.healthScore_progressWrapper {
+  column-gap: 25px;
+}
+.healthScore_progressResult {
+  font-weight: var(--fw-regular);
+  font-size: 32px;
+  color: var(--card-text-clr);
+  padding-bottom: 7px;
+  padding-bottom: 40px;
+}
+.healthScore_progressResult h4 i {
+  font-size: 18px;
+}
+.healthScore_cardWrapper .common_btn {
+  padding: 7px 17px;
+  background-color: var(--btn-bg-grn);
+}
+.healthScore_details {
+  font-weight: var(--fw-regular);
+  color: var(--black-clr);
+  font-size: 16px;
+  padding: 0 30px;
+  padding-bottom: 30px;
+}
+.healthScore_itemWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 12px;
+}
+.healthScore_item {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--card-text-clr);
+  position: relative;
+}
+.healthScore_item::before{
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: -27px;
+  border-radius: 50%;
+  background-color: var(--btn-bg-dng);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.healthScore_item:nth-child(2)::before{
+  background-color: var(--btn-bg-ylw);
+}
 /* ==== right side design ====== */
-
 
 /* ===========  dashboard page css end here ========== */
