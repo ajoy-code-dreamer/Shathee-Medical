@@ -101,6 +101,7 @@
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+  margin-bottom: 20px;
 }
 .bp_contentDetailsPartWrapper {
   padding: 80px 140px;
@@ -116,23 +117,137 @@
   color: var(--card-text-clr);
   padding-bottom: 20px;
 }
-.bpContent_btn.common_btn{
+.bpContent_btn.common_btn {
   padding: 7px 28px;
   font-size: 14px;
   background-color: var(--btn-bg-dng);
   margin-bottom: 20px;
 }
-.bp_contentDetails{
+.bp_contentDetails {
   font-size: 16px;
   font-weight: var(--fw-regular);
   color: var(--card-text-clr);
 }
-.bp_contentDetails_highlighter{
+.bp_contentDetails_highlighter {
   font-weight: var(--fw-bold);
   color: var(--btn-bg-dng);
   text-transform: var(--text-uppercase);
 }
-.bp_contentDetails_highlighter:nth-child(2){
+.bp_contentDetails_highlighter:nth-child(2) {
   color: var(--btn-bg-grn);
 }
+
+.suggest_videoCardWrapper {
+  background-color: var(--white-clr);
+  padding: 29px 26px 26px 26px;
+  margin-right: 20px;
+  font-family: var(--primary-font);
+}
+.suggest_title,
+.suggest_title a {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--card-text-clr);
+}
+.suggest_title {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding-bottom: 24px;
+}
+.suggest_slideIcon{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 7px;
+}
+.suggest_prevArrow,.suggest_nextArrow{
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 43, 95, 0.2);
+  color: var(--white-clr);
+  font-size: 16px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.suggest_prevArrow:hover,.suggest_nextArrow:hover{
+  background-color: var(--card-text-clr);
+  color: var(--white-clr);
+}
+.suggest_videoItem{
+  max-width: 267px;
+  max-height: 148px;
+  border-radius: 4px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.suggest_overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(rgba(29, 43, 95, 0.05),rgba(29, 43, 95, 0.9));
+  padding: 15px;
+  display: flex;
+  column-gap: 9px;
+  align-items: end;
+  color: var(--white-clr);
+  font-family: var(--primary-font);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.suggest_overlay a{
+  color: var(--white-clr);
+  font-size: 25px;
+}
+.suggest_overlayContent h3{
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+}
+.suggest_overlayContent p{
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+}
+.suggest_videoItem:hover .suggest_overlay{
+  top: 0;
+}
+.suggest_slider_dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+  margin-top: 15px;
+}
+.suggestSliderDot{
+  width: 4px;
+  height: 4px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
 /* ============ blood pressure page design end here ============= */
