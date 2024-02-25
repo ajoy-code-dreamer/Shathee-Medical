@@ -1,9 +1,9 @@
 $(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
+    $('.bottom_slider_1').owlCarousel({
        items:3,
         loop:true,
         autoplay:true,
-        margin:10,
+        margin:15,
         responsiveClass:true,
         responsive:{
             0:{
@@ -21,4 +21,72 @@ $(document).ready(function(){
             }
         }
     })
+    $('.bottom_slider_2').owlCarousel({
+       items:3,
+        loop:true,
+        autoplay:true,
+        margin:15,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:true
+            },
+            600:{
+                items:2,
+                nav:true
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:true
+            }
+        }
+    })
+    $('.bottom_slider_3').owlCarousel({
+       items:3,
+        loop:true,
+        autoplay:true,
+        margin:15,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:true
+            },
+            600:{
+                items:2,
+                nav:true
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:true
+            }
+        }
+    })
+    $('.top_slider').owlCarousel({
+       items:1,
+        loop:true,
+        autoplay:true,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:1,
+                nav:true
+            },
+            1000:{
+                items:1,
+                nav:true,
+                loop:true
+            }
+        }
+    })
+    
   });
+
+  

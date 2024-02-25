@@ -20,7 +20,7 @@
   /* === font size === */
   --heading-font-size-1: 64px;
   --heading-font-size-2: 48px;
-  --body-font-size: 24px;
+  --body-font-size: 32px;
   --pera-font-size-1: 20px;
   --pera-font-size-2: 16px;
   --btn-font-size: 12px;
@@ -85,7 +85,7 @@ body {
   font-family: var(--primary-font);
 }
 .container {
-  max-width: 1280px;
+  max-width: 1460px;
   margin: 0 auto;
 }
 .common_btn {
@@ -138,6 +138,11 @@ body {
 }
 .recipe_top_wrapper {
   background-color: #e3f1ff;
+}
+.slider_item {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  gap: 30px;
 }
 .recipe_img {
   height: 500px;
@@ -330,4 +335,48 @@ h2.section_header {
   z-index: -1;
   background: #c7cdde;
   border-radius: 50%;
+}
+/* Upload Management page CSS */
+.test_results {
+  background: var(--white-clr);
+  border-radius: 10px 10px 0 0;
+}
+.test_results table {
+  border-color: #e8e8e8;
+}
+.test_results .table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #dbdde0;
+}
+.test_results table thead tr th {
+  color: #25282b;
+}
+.test_results table thead tr th,
+.test_results table tbody tr td,
+.test_results table tbody tr th {
+  font-size: 14px;
+
+  font-weight: var(--fw-regular);
+}
+.test_results table tbody tr th {
+  color: #52575c;
+}
+.test_results table i.color {
+  color: #ff6760;
+}
+.pagination li a.page-link {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #25282b;
+}
+.pagination li a.page-link:hover {
+  background-color: #1d2b5f;
+  color: var(--white-clr);
+}
+.patient_pagination {
+  background: var(--white-clr);
+  padding: 0 0 25px 25px;
+  border-radius: 0 0 10px 10px;
 }
