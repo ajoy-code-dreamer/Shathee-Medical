@@ -1,0 +1,70 @@
+/* ============ physical and mental page design start here ============= */
+.pAndM_toDoListWrapperMain {
+  padding: 21px 33px 33px 33px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.toDo_title {
+  font-family: var(--primary-font);
+  font-weight: var(--fw-bold);
+  font-size: 20px;
+  color: var(--card-text-clr);
+  padding-bottom: 12px;
+}
+.suggest_title.toDo_itemTitle{
+  padding-bottom: unset;
+}
+.toDo_itemWrapper {
+  padding: 15px;
+  background-color: #f4f6ff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.toDo_itemTitle{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: var(--fw-bold);
+  column-gap: 10px;
+}
+.toDo_itemTitle a{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: var(--white-clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--card-text-clr);
+  font-size: 14px;
+
+}
+.toDo_videoItem {
+  max-width: 209px;
+  max-height: 111px;
+}
+.toDo_overlayContentWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.toDo_overlayContentWrapper a{
+  font-size: 18px;
+}
+.toDo_overlayContent h3 {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+}
+
+/* ============ physical and mental page design end here ============= */

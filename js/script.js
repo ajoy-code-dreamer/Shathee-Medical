@@ -20,7 +20,7 @@ $(function(){
         autoplaySpeed: 1000,
         dots: true,
     });
-    
+
     $('.related_slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -28,6 +28,25 @@ $(function(){
         nextArrow: '.related_nextArrow',
         autoplay: true,
         autoplaySpeed: 3000,
+        dots: true,
+    });
+
+    $('.toDo_slider1').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '.toDo_prevIcon1',
+        nextArrow: '.toDo_nextIcon1',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+    });
+    $('.toDo_slider2').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '.toDo_prevIcon2',
+        nextArrow: '.toDo_nextIcon2',
+        autoplay: true,
+        autoplaySpeed: 2000,
         dots: true,
     });
 
