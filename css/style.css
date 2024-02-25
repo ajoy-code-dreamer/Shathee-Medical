@@ -90,7 +90,7 @@ body {
   font-family: var(--primary-font);
 }
 .container {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .common_btn {
@@ -510,6 +510,7 @@ body {
   font-size: 14px;
   color: var(--card-text-clr);
 }
+
 .test_input input,.test_date input{
   height: 44px;
   padding: 10px;

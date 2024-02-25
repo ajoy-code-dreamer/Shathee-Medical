@@ -10,6 +10,7 @@ $(function(){
         autoplaySpeed: 2000,
         dots: true,
     });
+
     $('.follow_dietSlider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -19,6 +20,7 @@ $(function(){
         autoplaySpeed: 1000,
         dots: true,
     });
+    
     $('.related_slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
