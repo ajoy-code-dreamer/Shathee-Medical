@@ -155,13 +155,18 @@
   column-gap: 16px;
   padding-bottom: 24px;
 }
-.suggest_slideIcon{
+.suggest_slideIcon {
   display: flex;
   justify-content: end;
   align-items: center;
   column-gap: 7px;
 }
-.suggest_prevArrow,.suggest_nextArrow{
+.suggest_prevArrow,
+.suggest_nextArrow,
+.flowDiet_nextArrow,
+.flowDiet_prevArrow,
+.related_prevArrow,
+.related_nextArrow {
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -181,11 +186,16 @@
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
 }
-.suggest_prevArrow:hover,.suggest_nextArrow:hover{
+.related_prevArrow:hover,
+.related_nextArrow:hover,
+.suggest_prevArrow:hover,
+.suggest_nextArrow:hover,
+.flowDiet_prevArrow:hover,
+.flowDiet_nextArrow:hover {
   background-color: var(--card-text-clr);
   color: var(--white-clr);
 }
-.suggest_videoItem{
+.suggest_videoItem {
   max-width: 267px;
   max-height: 148px;
   border-radius: 4px;
@@ -198,13 +208,13 @@
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-.suggest_overlay{
+.suggest_overlay {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 100%;
   left: 0;
-  background: linear-gradient(rgba(29, 43, 95, 0.05),rgba(29, 43, 95, 0.9));
+  background: linear-gradient(rgba(29, 43, 95, 0.05), rgba(29, 43, 95, 0.9));
   padding: 15px;
   display: flex;
   column-gap: 9px;
@@ -216,38 +226,94 @@
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  cursor: pointer;
 }
-.suggest_overlay a{
+.suggest_overlay a {
   color: var(--white-clr);
-  font-size: 25px;
+  font-size: 24px;
 }
-.suggest_overlayContent h3{
+.suggest_overlayContent h3 {
   font-weight: var(--fw-bold);
   font-size: 16px;
 }
-.suggest_overlayContent p{
+.suggest_overlayContent p {
   font-weight: var(--fw-regular);
   font-size: 12px;
 }
-.suggest_videoItem:hover .suggest_overlay{
+.suggest_videoItem:hover .suggest_overlay {
   top: 0;
 }
-.suggest_slider_dots{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 5px;
-  margin-top: 15px;
+.slick-dots {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
-.suggestSliderDot{
+.slick-dots li {
+  display: inline-block;
+  justify-content: center;
+  margin: 0 5px;
+}
+.slick-dots li button {
+  font-size: 0;
+  border: none;
   width: 4px;
   height: 4px;
-  background-color: #D9D9D9;
   border-radius: 50%;
+  background-color: #d9d9d9;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.slick-dots .slick-active button {
+  width: 6px;
+  height: 6px;
+  background-color: var(--card-text-clr);
+}
+.follow_diet .suggest_title {
+  padding-bottom: 5px;
+}
+.diet_details {
+  padding-bottom: 25px;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--card-text-clr);
+  font-weight: var(--fw-regular);
+}
+.followDiet_menu {
+  padding-top: 15px;
+  display: flex;
+  column-gap: 9px;
+  align-items: end;
+  color: var(--card-text-clr);
+  font-family: var(--primary-font);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.followDiet_menu a {
+  color: var(--card-text-clr);
+  font-size: 25px;
+}
+.followDiet_menuContent h3 {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+}
+.followDiet_menuContent p {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
 }
 
 /* ============ blood pressure page design end here ============= */
