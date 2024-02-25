@@ -4,6 +4,7 @@
 /* ============== import area end here =================== */
 /* ========= others pages css file =========== */
 @import url(../css/bloodPressure.css);
+@import url(../css/bloodSugar.css);
 /* ========= others pages css file =========== */
 /* ============ css variables ============= */
 :root {
@@ -511,7 +512,7 @@ body {
   color: var(--card-text-clr);
 }
 
-.test_input input,.test_date input{
+.reportSelect input,.reportSelect input{
   height: 44px;
   padding: 10px;
   background-color: rgba(50, 92, 244, 0.1);
@@ -521,7 +522,7 @@ body {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-.test_input label{
+.reportSelect label{
   font-weight: var(--fw-regular);
   font-size: 12px;
   color: var(--card-text-clr);

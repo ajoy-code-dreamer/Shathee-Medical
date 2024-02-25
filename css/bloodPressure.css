@@ -315,6 +315,8 @@
   font-weight: var(--fw-regular);
   font-size: 12px;
 }
-
+.related_cardWrapper{
+  margin: 0;
+}
 
 /* ============ blood pressure page design end here ============= */

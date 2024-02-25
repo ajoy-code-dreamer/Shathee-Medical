@@ -130,23 +130,23 @@
           <div class="col-lg-9 p-0">
             <div class="main_dashboardWrapper">
               <div class="row p-0">
-                <div class="col-lg-12 p-0">
+                <div class="col p-0">
                   <div class="row user_interfaceWrapper">
-                    <div class="col-lg-10">
+                    <div class="col-10">
                       <div class="user_interfaceNameMain">
-                        <p class="interface_commonDialog">Blood Pressure</p>
+                        <p class="interface_commonDialog">Blood Sugar</p>
                         <h2 class="interface_nameWrapper">
-                          Let’s have a look at your heart’s health,
+                          Let’s have a look at your blood glucose,
                           <span class="interface_name">Sabrina!</span>
                         </h2>
                       </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-2">
                       <div class="section_logoWrapper">
                         <picture>
                           <img
-                            src="../images/bp_logo.png"
-                            alt="../images/bp_logo.png"
+                            src="../images/sugar_logo.png"
+                            alt="../images/sugar_logo.png"
                             title="bp logo"
                             class="img-fluid"
                           />
@@ -157,9 +157,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-lg-12 p-0">
-                  <div class="bp_chartWrapperMain">
-                    <div class="row">
+                <div class="col-12 p-0">
+                  <div class="bp_chartWrapperMain bloodSugar_chartWrapper">
+                    <div class="row pb-4">
+                      <div class="col-9">
+                        <h3 class="bloodSugar_chartTitle">
+                          Blood Glucose Chart
+                        </h3>
+                      </div>
                       <div class="col-3">
                         <div class="bp_averageResultsWrapper">
                           <div class="bp_resultDuration">
@@ -170,38 +175,33 @@
                               <option value="Year">1 Year</option>
                             </select>
                           </div>
-                          <div class="average_bpWrapper">
-                            <div class="averageBp">
-                              <p class="averageBpTitle">Systolic mmHg</p>
-                              <h2 class="averageBpResult">160</h2>
-                            </div>
-                            <div class="averageBp">
-                              <p class="averageBpTitle">Diastolic mmHg</p>
-                              <h2 class="averageBpResult">90</h2>
-                            </div>
-                          </div>
                         </div>
                       </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <div class="bloodSugar_chart">
+                          <picture>
+                            <img
+                              src="../images/bSugar_chart.png"
+                              alt="../images/bSugar_chart.png"
+                              title="chart"
+                              class="img-fluid"
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
                       <div class="col-9">
-                        <div class="bp_cartWrapper">
-                          <div class="bp_cardDateWrapper">
-                            <p>
-                              Last update: <span class="bp_cardDate"></span>2
-                              days ago
-                            </p>
-                          </div>
-                          <div class="bp_cart">
-                            <picture>
-                              <img
-                                src="../images/bp_cart.png"
-                                alt="../images/bp_cart.png"
-                                title="bp cart"
-                                class="img-fluid"
-                              />
-                            </picture>
-                          </div>
+                        <div class="glucoseLaveName">
+                          <ul>
+                            <li>Fasting blood glucose</li>
+                            <li>2 hours postprandial</li>
+                          </ul>
                         </div>
                       </div>
+                      <div class="col-3"></div>
                     </div>
                   </div>
                 </div>
@@ -214,7 +214,7 @@
                         class="bp_contentDetailsPartWrapper bpPage_CommonCard"
                       >
                         <h5 class="bp_contentDetailsTitle">
-                          Your blood pressure is
+                          Your blood glucose is
                         </h5>
                         <a href="#" class="bpContent_btn common_btn">High</a>
                         <p class="bp_contentDetails">
@@ -224,7 +224,7 @@
                           >
                           than normal for your age, sex and weight, We can
                           provide you with some guidance towards lowering your
-                          blood pressure. We work together to
+                          blood sugar. We work together to
                           <span class="bp_contentDetails_highlighter"
                             >IMPROVE</span
                           >
@@ -621,7 +621,7 @@
                           </div>
                           <a href="#" class="download_btn common_btn">
                             <i class="fa-solid fa-cloud-arrow-down"></i>
-                            Download BP Report</a
+                            Download Glucose Report</a
                           >
                         </div>
                       </div>
@@ -634,31 +634,29 @@
                       >
                         <div class="test_reportUpload">
                           <form class="reportSelect">
-                            <div class="test_input">
-                              <label for="systolic">Systolic mmHg</label>
-                              <input
-                                class="form-control"
-                                type="text"
-                                name=""
-                                id="systolic"
-                                placeholder="180 mmHG"
-                              />
+                            <div class="test_select">
+                              <select class="form-select" name="" id="">
+                                <option value="">Before Meal</option>
+                                <option value="">After Meal</option>
+                              </select>
                             </div>
                             <div class="test_input">
-                              <label for="diastolic">Diastolic mmHg</label>
+                              <label for="diastolic">Glucose Reading</label>
                               <input
                                 class="form-control"
                                 type="text"
                                 name=""
-                                id="diastolic"
-                                placeholder="120 mmHG"
+                                id="Glucose"
+                                placeholder="Enter your data here"
                               />
                             </div>
                             <div class="test_date">
+                              <label for="readingDate">Reading Date</label>
                               <input
                                 type="text"
                                 class="form-control"
                                 onfocus="(this.type='date')"
+                                id="readingDate"
                                 placeholder="Select Date"
                               />
                             </div>
@@ -674,7 +672,9 @@
               </div>
               <div class="row">
                 <div class="col-lg-12 p-0">
-                  <div class="suggest_videoCardWrapper bpPage_CommonCard related_cardWrapper">
+                  <div
+                    class="suggest_videoCardWrapper bpPage_CommonCard related_cardWrapper"
+                  >
                     <div class="row">
                       <div class="col-10">
                         <h3 class="suggest_title">
@@ -711,7 +711,7 @@
                               ><i class="fa-regular fa-circle-play"></i
                             ></a>
                             <div class="suggest_overlayContent">
-                              <h3>Healthy Happy Life</h3>
+                              <h3>Reduce Your BP</h3>
                               <p>Dr. Tasnim Zara</p>
                             </div>
                           </div>
@@ -732,7 +732,7 @@
                               ><i class="fa-regular fa-circle-play"></i
                             ></a>
                             <div class="suggest_overlayContent">
-                              <h3>Healthy Happy Life</h3>
+                              <h3>Reduce Your BP</h3>
                               <p>Dr. Tasnim Zara</p>
                             </div>
                           </div>
@@ -753,7 +753,7 @@
                               ><i class="fa-regular fa-circle-play"></i
                             ></a>
                             <div class="suggest_overlayContent">
-                              <h3>Healthy Happy Life</h3>
+                              <h3>Reduce Your BP</h3>
                               <p>Dr. Tasnim Zara</p>
                             </div>
                           </div>
@@ -774,7 +774,7 @@
                               ><i class="fa-regular fa-circle-play"></i
                             ></a>
                             <div class="suggest_overlayContent">
-                              <h3>Healthy Happy Life</h3>
+                              <h3>Reduce Your BP</h3>
                               <p>Dr. Tasnim Zara</p>
                             </div>
                           </div>
@@ -795,7 +795,7 @@
                               ><i class="fa-regular fa-circle-play"></i
                             ></a>
                             <div class="suggest_overlayContent">
-                              <h3>Healthy Happy Life</h3>
+                              <h3>Reduce Your BP</h3>
                               <p>Dr. Tasnim Zara</p>
                             </div>
                           </div>
@@ -816,7 +816,7 @@
                               ><i class="fa-regular fa-circle-play"></i
                             ></a>
                             <div class="suggest_overlayContent">
-                              <h3>Healthy Happy Life</h3>
+                              <h3>Reduce Your BP</h3>
                               <p>Dr. Tasnim Zara</p>
                             </div>
                           </div>
