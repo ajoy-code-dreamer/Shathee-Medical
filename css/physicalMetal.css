@@ -148,4 +148,26 @@
   padding: 7px 20px;
   background-color: var(--btn-bg-grn);
 }
+.small_insightCardWrapper{
+  padding: 27px 56px;
+}
+.small_insightCardContentWrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--primary-font);
+  color: var(--card-text-clr);
+  text-align: center;
+}
+.small_insightCardContentWrapper h4{
+  font-weight: var(--fw-bold);
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.small_insightCardContentWrapper p{
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  padding-bottom: 20px;
+
+}
 /* ============ physical and mental page design end here ============= */
