@@ -15,7 +15,7 @@
   color: var(--card-text-clr);
   padding-bottom: 12px;
 }
-.suggest_title.toDo_itemTitle{
+.suggest_title.toDo_itemTitle {
   padding-bottom: unset;
 }
 .toDo_itemWrapper {
@@ -27,14 +27,14 @@
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-.toDo_itemTitle{
+.toDo_itemTitle {
   display: flex;
   align-items: center;
   font-size: 14px;
   font-weight: var(--fw-bold);
   column-gap: 10px;
 }
-.toDo_itemTitle a{
+.toDo_itemTitle a {
   height: 30px;
   width: 30px;
   border-radius: 50%;
@@ -48,7 +48,6 @@
   align-items: center;
   background-color: var(--card-text-clr);
   font-size: 14px;
-
 }
 .toDo_videoItem {
   max-width: 209px;
@@ -59,12 +58,94 @@
   align-items: center;
   column-gap: 8px;
 }
-.toDo_overlayContentWrapper a{
+.toDo_overlayContentWrapper a {
   font-size: 18px;
 }
 .toDo_overlayContent h3 {
   font-weight: var(--fw-regular);
   font-size: 14px;
 }
-
+.averageSleep_cardWrapper {
+  background: url(../images/averageSleep_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 44px 50px 76px 50px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.lastWeek_sleepContent {
+  font-family: var(--primary-font);
+  color: var(--white-clr);
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  padding-bottom: 12px;
+}
+.lastWeek_averageSleepTimeWrapper {
+  font-family: var(--primary-font);
+  color: var(--white-clr);
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  padding-bottom: 18px;
+}
+.lastWeek_averageSleepTime {
+  font-weight: var(--fw-bold);
+  font-size: 48px;
+  padding-right: 4px;
+}
+.average_sleepBtn.common_btn {
+  padding: 7px 32px;
+  color: var(--btn-bg-grn);
+  background-color: var(--white-clr);
+}
+.weekly_graphTitle {
+  font-family: var(--primary-font);
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--white-clr);
+  padding-bottom: 8px;
+}
+.small_cardWrapper{
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 22px 27px;
+  background-color: var(--white-clr);
+}
+.summery_card{
+  background-color: var(--card-text-clr);
+}
+.card_contentSummery{
+  font-weight: var(--fw-regular);
+  font-size: 16px;
+  color: var(--white-clr);
+  text-align: center;
+}
+.smallCard_contentWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.small_cardTitleWrapper{
+  font-family: var(--primary-font);
+  color: var(--card-text-clr);
+}
+.small_cardTitleWrapper p{
+  font-weight: var(--fw-regular);
+  font-size: 20px;
+  padding-bottom: 2px;
+}
+.small_cardTitleWrapper h6{
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+}
+.smallCardBtn.common_btn{
+  padding: 7px 20px;
+  background-color: var(--btn-bg-grn);
+}
 /* ============ physical and mental page design end here ============= */
