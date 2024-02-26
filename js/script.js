@@ -193,3 +193,8 @@ $(function(){
 
 })
 // ====== jQuery operations ======
+
+const div=document.querySelector('.bp_cardWrapper.bp_grpah_wrapper')
+div.addEventListener('click',()=>{
+  window.location.href='../pages/all_recipes.html'
+})
