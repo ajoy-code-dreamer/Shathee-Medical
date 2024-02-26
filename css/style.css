@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap");
 
 /* ============== import area end here =================== */
-/* ========= others pages css file =========== */
 
-/* ========= others pages css file =========== */
 /* ============ css variables ============= */
 :root {
   /* === font family === */
@@ -20,7 +18,7 @@
   /* === font size === */
   --heading-font-size-1: 64px;
   --heading-font-size-2: 48px;
-  --body-font-size: 32px;
+  --body-font-size: 24px;
   --pera-font-size-1: 20px;
   --pera-font-size-2: 16px;
   --btn-font-size: 12px;
@@ -30,6 +28,7 @@
   --black-clr: #000;
   --transparent-clr: transparent;
   --theme-blue-clr: #f2f5ff;
+  --theme-blue-clr-2: #f4f7fe;
   --primary-blue-clr: #325cf4;
   --border-clr: rgba(50, 92, 244, 0.3);
   --border-clr-2: #9747ff;
@@ -38,6 +37,10 @@
   --text-gray-clr: #3d3d3d;
   --baseline-gray-clr: #d9d9d9;
   --text-medium-clr: #6276b6;
+  --card-text-clr: #1d2b5f;
+  --btn-bg-grn: #05cd99;
+  --btn-bg-ylw: #fea200;
+  --btn-bg-dng: #ff725e;
   /* === colors === */
   /* === method === */
   --transition: all 0.3s linear;
@@ -84,8 +87,11 @@ body {
   position: relative;
   font-family: var(--primary-font);
 }
+main {
+  min-height: 100vh;
+}
 .container {
-  max-width: 1460px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 .common_btn {
@@ -98,11 +104,11 @@ body {
   padding: 7px 10px;
   border: 1px solid var(--transparent-clr);
   cursor: pointer;
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
@@ -110,465 +116,574 @@ body {
   -o-transition: var(--transition);
 }
 .common_btn:hover {
-  color: var(--primary-blue-clr);
+  color: var(--black-clr);
   background-color: var(--white-clr);
   border: 1px solid var(--border-clr);
 }
 
 /* ============= common css end here ================ */
 
-/* ===========  section css end here ========== */
-/* ===========  section css end here ========== */
-
-/* ===========  section css end here ========== */
-/* ===========  section css end here ========== */
-
-/* ===========  section css end here ========== */
-/* ===========  section css end here ========== */
-
-/* ===========  section css end here ========== */
-/* ===========  section css end here ========== */
-
-/* Recipe section CSS */
-
-/* recipe details page css */
-.recipe_wrapper {
-  background-color: #f4f7fe;
-  padding: 45px 25px 25px 25px;
+/* ===========  dashboard page css start here ========== */
+#dashboard {
+  background-color: var(--theme-blue-clr-2);
 }
-.recipe_top_wrapper {
-  background-color: #e3f1ff;
-}
-.slider_item {
-  display: grid;
-  grid-template-columns: 7fr 5fr;
-  gap: 30px;
-}
-.recipe_img {
-  height: 500px;
-  overflow: hidden;
-  border-radius: 20px 0 0 20px;
-}
-
-.recipe_top_wrapper .recipe_img img {
-  width: 100%;
-  height: 100%;
-}
-.recipe_content {
-  padding: 50px;
-}
-.recipe_content h2 {
-  color: #1d2b5f;
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  padding-top: 40px;
-}
-.recipe_content p {
-  color: var(--black-clr);
-  font-size: var(--pera-font-size-2);
-  text-align: justify;
-}
-.recipe_bottom_wrapper {
-  padding-top: 40px;
-}
-.instructions {
-  padding-right: 25px;
-}
-.instructions h4 {
-  font-size: var(--pera-font-size-1);
-  font-weight: 400;
-  text-decoration: underline;
-}
-.instructions p.title {
-  padding: 25px 0px 30px 0;
-  font-weight: 600;
-}
-.instructions p.title.last {
-  font-weight: 400;
-}
-.instructions ul {
-  list-style-type: disc;
-  padding-left: 30px;
-}
-.instructions ul li {
-  font-size: var(--pera-font-size-2);
-  font-weight: 400;
-  line-height: 26px;
-}
-.ingredients {
-  padding: 18px 25px 18px 35px;
+.sidebar_wrapper {
   background-color: var(--white-clr);
-  border-radius: 20px;
-  margin-bottom: 15px;
+  padding: 40px 100px 40px 38px;
 }
-.ingredients h4 {
-  padding-bottom: 10px;
-  font-weight: 400;
-  font-size: 26px;
-  color: #1d2b5f;
+.brand_logo {
+  padding-bottom: 40px;
 }
-.indredients_btns {
-  padding-top: 25px;
-}
-.slider_btns a,
-.indredients_btns a {
-  font-size: var(--btn-font-size);
-  padding: 10px 20px;
-  background-color: #e4b265;
-  border-radius: 30px;
-  color: #fff;
-  margin-right: 10px;
-}
-.slider_btns a:last-child,
-.indredients_btns a:last-child {
-  background-color: #57bbe5;
-}
-
-/* All recipes Page css */
-.recipe_top_heading {
-  height: 170px;
-  padding-left: 30px;
-  background-color: #e0e9ff;
-  border-radius: 20px;
-  margin-bottom: 40px;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-content: space-between;
+.dashboard_userWrapper {
+  padding: 30px 0;
+  display: flex;
   align-items: center;
+  column-gap: 15px;
+  border-top: 1px solid var(--theme-blue-clr-2);
+  border-bottom: 1px solid var(--theme-blue-clr-2);
 }
-.recipe_top_heading h2 {
-  font-size: 28px;
-  color: #1d2b5f;
-}
-.recipe_top_heading p {
-  font-size: 16px;
-  color: #6276b5;
-  font-weight: 400;
-  line-height: 26px;
-}
-.recipe_heading_img {
-  justify-self: end;
-}
-
-.slider_btn {
-  margin-top: 25px;
-}
-.slider_btn a.btn {
-  padding: 20px 10px 20px 20px;
-  color: var(--white-clr);
-  background-color: #1d2b5f;
-  display: inline-flex;
-  border-radius: 12px;
-}
-
-.slider_btn a.btn i {
-  margin-left: 30px;
-  color: var(--white-clr);
-  width: 24px;
-  height: 24px;
+.user_imageWrapper {
+  max-width: 48px;
+  max-height: 48px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
   border-radius: 50%;
-  background-color: #4b5581;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-h2.section_header {
-  font-size: 32px;
-  font-weight: 700;
-  padding-bottom: 20px;
-  line-height: 42px;
+.user_detailsWrapper {
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
 }
-.todays_recipe_img img {
-  width: 100%;
-  width: 100%;
+.user_names {
+  font-size: var(--pera-font-size-2);
+  font-weight: var(--fw-bold);
+  color: #272927;
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
-.recipe_title {
-  padding: 20px 0;
-  font-size: 20px;
+.user_lastLogin {
   font-weight: var(--fw-regular);
-}
-
-.todays_recipe_btn a.btn {
-  padding: 7px 30px;
-  background: #1d2b5f;
-  color: var(--white-clr);
-  font-size: 12px;
-  border-radius: 30px;
-}
-.cat_name {
-  text-align: center;
-  padding: 20px 0;
-  line-height: 24px;
-  font-size: 16px;
-}
-
-.single_slider .recipe_title h3 {
-  font-size: 20px;
-  color: var(--black-clr);
-  font-weight: var(--fw-regular);
-}
-
-.owl-nav {
-  position: absolute;
-  top: -20%;
-  right: -90%;
-  font-size: 25px;
-  display: flex;
-  gap: 15px;
-}
-
-.owl-nav button span {
-  position: relative;
-  height: 24px;
-  width: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--white-clr);
-}
-.owl-nav button span::after {
-  position: absolute;
-  content: "";
-  top: 3px;
-  left: 1px;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background: #c7cdde;
-  border-radius: 50%;
-}
-/* Upload Management page CSS */
-.test_results {
-  background: var(--white-clr);
-  border-radius: 10px;
-}
-.test_results table {
-  border-color: #e8e8e8;
-}
-.test_results .table > :not(:last-child) > :last-child > * {
-  border-bottom-color: #dbdde0;
-}
-.test_results table thead tr th {
-  color: #25282b;
-}
-.test_results table thead tr th,
-.test_results table tbody tr td,
-.test_results table tbody tr th {
   font-size: 14px;
-
-  font-weight: var(--fw-regular);
-}
-.test_results table tbody tr th {
-  color: #52575c;
-}
-.test_results table i {
-  color: #a0a4a8;
-  padding-left: 5px;
-}
-.test_results table i.color {
-  color: #ff6760;
-  padding-left: 15px;
-}
-.pagination li a.page-link {
-  height: 32px;
-  width: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #25282b;
-}
-.pagination li a.page-link:hover {
-  background-color: #1d2b5f;
-  color: var(--white-clr);
-}
-.patient_pagination {
-  background: var(--white-clr);
-  padding: 0 0 25px 25px;
-}
-/* patient report page css */
-.patients_details p,
-.patients_details h5 {
-  font-size: 16px;
-  line-height: 24px;
-  color: #1d2b5f;
-}
-.patients_details h5 {
-  color: #325cf4;
-}
-.patients_details p i {
-  margin-right: 5px;
-}
-.patients_details p span {
-  font-size: 14px;
-}
-.patient_profile_img img {
-  border-radius: 50%;
-}
-.patient_summary h3 {
-  color: #325cf4;
-  font-size: 24px;
-  padding-bottom: 20px;
-}
-.patient_summary p {
-  color: #1d2b5f;
-  margin-bottom: 35px;
-}
-.patient_summary p.join_time {
-  margin-bottom: 15px;
-  font-size: 16px;
   color: #a3aed0;
 }
-.goal_img img {
-  height: 140px;
-  width: 100%;
+.nav_menu {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
 }
-.goal_content ul li {
-  color: #1d2b5f;
+.nav-link {
+  padding: 10px;
+  font-family: var(--primary-font);
+  color: #a3aed0;
+  font-size: var(--pera-font-size-2);
+  font-weight: var(--fw-bold);
+  background-color: var(--transparent-clr);
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
-.goal_content ul li:nth-child(1) {
+.nav_icon {
   font-size: 20px;
 }
-.goal_content ul li:nth-child(2) {
+.nav-link:hover {
+  color: var(--white-clr);
+  background-color: var(--primary-blue-clr);
+}
+.nav-link.active {
+  color: var(--white-clr);
+  background-color: var(--primary-blue-clr) !important;
+}
+.nav-link:hover .nav_icon {
+  color: var(--white-clr);
+}
+.nav-link.active .nav_icon {
+  color: var(--white-clr);
+}
+/* ==== right side design ====== */
+.user_interfaceWrapper {
+  padding: 44px 48px 44px 48px;
+  background-color: #e0e9ff;
+  border-radius: 20px;
+  align-items: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.user_appointmentWrapper {
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.interface_commonDialog {
+  font-weight: var(--fw-regular);
+  font-size: var(--pera-font-size-2);
+  color: var(--text-medium-clr);
+  padding-bottom: 10px;
+}
+.interface_nameWrapper {
+  font-weight: var(--fw-bold);
+  font-size: 32px;
+  color: #1d2b5f;
+}
+.interface_name {
+  color: var(--primary-blue-clr);
+}
+.user_appointment {
+  font-weight: var(--fw-bold);
   font-size: 18px;
+  color: var(--primary-blue-clr);
+  padding-bottom: 7px;
 }
-.goal_content ul li:nth-child(3) {
-  font-size: 16px;
+.user_appointmentDate {
+  padding-bottom: 6px;
 }
-.goal_content ul li:nth-child(4) {
+.appointmentIcon {
+  padding-right: 9px;
+}
+.user_appointmentDate,
+.user_appointmentTime {
+  font-weight: var(--fw-regular);
   font-size: 14px;
-}
-
-.prescription p {
   color: #1d2b5f;
 }
-.prescription_title {
-  font-size: 12px;
+
+.feeling_cardWrapper {
+  padding: 40px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
 }
-.indication {
-  font-size: 10px;
+.feeling_heading {
+  font-weight: var(--fw-regular);
+  font-size: 24px;
+  color: #818181;
+  padding-bottom: 30px;
 }
-.recent_tests ul li,
-.prescription_content ul li {
-  height: 49px;
-  background: #f4f6ff;
-  margin-bottom: 7px;
-  border-radius: 12px;
-  padding-left: 20px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
+.feeling_item {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  row-gap: 17px;
+  cursor: pointer;
 }
-.recent_tests ul li:first-child,
-.prescription_content ul li:first-child {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background: none;
-  padding-top: 0;
-  height: 45px;
-}
-.prescription_content ul li p span.no_bg,
-.prescription_content ul li p span.bg {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #325cf4;
-  height: 18px;
-  width: 18px;
+.feeling_imageWrapper {
+  width: 63px;
+  height: 63px;
+  background-color: transparent;
   border-radius: 50%;
-  color: var(--white-clr);
-  font-size: 10px;
-}
-.prescription_content ul li p span.no_bg {
-  background-color: rgba(28, 28, 28, 0.5);
-}
-.recent_tests_content ul li {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: center;
-  align-items: center;
-}
-.recent_tests ul li p a.btn {
-  padding: 7px 15px;
-  font-size: 12px;
-  color: #fff;
-  border: 2px solid transparent;
-  cursor: default;
-}
-
-.recent_tests ul li p a.btn.high {
-  background-color: #ff725e;
-}
-
-.recent_tests ul li p a.btn.normal {
-  background-color: #05cd99;
-}
-.medical_history_wrapper h4.title {
-  margin: 25px 0;
-}
-.single_history {
-  width: 200px;
-  height: 75px;
-  border: 2px solid #1d2b5f;
-  border-radius: 12px;
-  display: grid;
-  place-content: center;
-}
-.single_history h4 {
-  padding-bottom: 0;
-  font-size: 22px;
-  text-align: center;
-}
-.single_history p {
-  font-size: 16px;
-  color: #1d2b5f;
-}
-
-.medical_history_wrapper .owl-nav {
-  top: -67px;
-  left: 609px;
-}
-.report_download p {
-  padding: 12px 0;
-  font-size: 12px;
-}
-.report_download input {
-  padding: 20px;
-  background: #f4f6ff;
-  border: 0;
-  outline: 0;
-  border-radius: 12px;
-  width: 100%;
-}
-.report_download input::placeholder {
-  color: rgba(29, 43, 95, 0.6);
-  font-size: 14px;
-}
-.download_btn {
-  margin-top: 18px;
-}
-.download_btn a.btn {
-  width: 100%;
-  padding: 20px 35px;
-  background-color: #1d2b5f;
-  color: var(--white-clr);
-  border-radius: 12px;
-}
-.input_field {
-  position: relative;
-}
-.arrow_btn i {
-  width: 24px;
-  height: 24px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--white-clr);
-  background: #1d2b5f;
-  border-radius: 50%;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  pointer-events: none;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
+.feeling_item:hover .feeling_imageWrapper {
+  background-color: #e0e9ff;
+}
+.feeling_image {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.feeling_caption {
+  font-size: var(--pera-font-size-2);
+  font-weight: var(--fw-bold);
+  color: #1d2b5f;
+  position: relative;
+}
+.feeling_item:hover .feeling_caption::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 1px;
+  background-color: #1d2b5f;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.bp_cardWrapper {
+  padding: 31px 40px 17px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.bp_titleWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.bp_cardMeasurement {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: #1d2b5f;
+}
+.bp_cardHeading,
+.diastolic_bp {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: #1d2b5f;
+}
+.bp_logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 43, 95, 0.1);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-bottom: 25px;
+}
+.bp_cardWrapper .common_btn {
+  padding: 7px 27px;
+  background-color: var(--btn-bg-dng);
+  margin-bottom: 10px;
+}
+.bp_graph {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.last_measurement {
+  font-family: var(--primary-font);
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: #818181;
+}
+.healthScore_cardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 37px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+.healthScore_title {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--card-text-clr);
+  padding-bottom: 4px;
+}
+.healthScore_lastDate {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: #818181;
+  padding-bottom: 40px;
+}
+.healthScore_progressWrapper {
+  column-gap: 25px;
+}
+.healthScore_progressResult {
+  font-weight: var(--fw-regular);
+  font-size: 32px;
+  color: var(--card-text-clr);
+  padding-bottom: 7px;
+  padding-bottom: 40px;
+}
+.healthScore_progressResult h4 i {
+  font-size: 18px;
+}
+.healthScore_cardWrapper .common_btn {
+  padding: 7px 17px;
+  background-color: var(--btn-bg-grn);
+}
+.healthScore_details {
+  font-weight: var(--fw-regular);
+  color: var(--black-clr);
+  font-size: 16px;
+  padding: 0 30px;
+  padding-bottom: 30px;
+}
+.healthScore_itemWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 12px;
+}
+.healthScore_item {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--card-text-clr);
+  position: relative;
+}
+.healthScore_item::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: -27px;
+  border-radius: 50%;
+  background-color: var(--btn-bg-dng);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.healthScore_item:nth-child(2)::before {
+  background-color: var(--btn-bg-ylw);
+}
+.bp_cardWrapper .common_btn {
+  margin-top: 13px;
+  padding: 7px 8px;
+  background-color: var(--btn-bg-ylw);
+}
+.others_healthCondition .common_btn {
+  margin-top: 13px;
+  padding: 7px 17px;
+  background-color: var(--btn-bg-grn);
+}
+
+.reportSelect {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.test_select select {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 10px 65px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+
+.reportSelect input,
+.reportSelect input {
+  height: 44px;
+  padding: 10px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.reportSelect label {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: var(--card-text-clr);
+  padding-bottom: 6px;
+}
+
+.weight_cardWrapper {
+  padding: 27px 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+}
+.weight_heading {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--card-text-clr);
+  padding-bottom: 13px;
+}
+.weight_detailsDate {
+  padding: 7px 10px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  color: var(--card-text-clr);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.weight_detailsDate i {
+  padding-right: 10px;
+  font-size: 15px;
+}
+.weight_detailsContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+  margin-bottom: 12px;
+}
+.weight_detailsItem {
+  max-width: 288px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 13px 10px 20px;
+  background-color: #f4f6ff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.weight_date {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+.weight_result {
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+.weight_feedback.common_btn {
+  padding: 7px 10px;
+  font-size: 14px;
+  background-color: var(--btn-bg-grn);
+}
+.weight_detailsItem:nth-child(1) {
+  background-color: unset;
+}
+.weight_detailsItem:nth-child(1) .weight_result {
+  font-weight: var(--fw-regular);
+}
+.weight_detailsItem:nth-child(2) .weight_feedback.common_btn {
+  background-color: var(--btn-bg-dng);
+  padding: 7px 18px;
+}
+.download_btn.download_btn {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 22px;
+  background-color: var(--card-text-clr);
+  padding: 16px 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.download_btn.download_btn:hover {
+  color: var(--btn-bg-ylw);
+}
+.recipe_cardWrapper {
+  background-color: var(--white-clr);
+  padding: 22px 26px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.recipe_title {
+  font-weight: var(--fw-bold);
+  font-size: 32px;
+  color: var(--card-text-clr);
+}
+.recipe_date {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: #a3aed0;
+  padding-bottom: 17px;
+}
+.recipe_routineWrapper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  padding-bottom: 15px;
+}
+.recipe_routineItem {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.recipe_playBtn {
+  color: var(--card-text-clr);
+  font-size: 30px;
+}
+.recipe_name {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--card-text-clr);
+}
+.recipe_time {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: var(#a3aed0);
+}
+.view_allRecipe {
+  text-align: end;
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--primary-blue-clr);
+}
+
+/* ==== right side design ====== */
+
+/* ===========  dashboard page css end here ========== */
+
+/* ========= others pages css file =========== */
+@import url(../css/bloodPressure.css);
+@import url(../css/bloodSugar.css);
+@import url(../css/physicalMetal.css);
+@import url(../css/patient_report.css);
+@import url(../css/recipepage.css);
+@import url(../css/upload_management.css);
+
+/* ========= others pages css file =========== */
