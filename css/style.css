@@ -130,7 +130,7 @@ body {
 }
 .sidebar_wrapper {
   background-color: var(--white-clr);
-  padding: 40px 100px 0 38px;
+  padding: 40px 100px 40px 38px;
 }
 .brand_logo {
   padding-bottom: 40px;
