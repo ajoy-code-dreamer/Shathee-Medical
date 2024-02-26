@@ -86,6 +86,28 @@ $(document).ready(function(){
             }
         }
     })
+    $('.past_medical_history').owlCarousel({
+       items:3,
+        loop:true,
+        autoplay:true,
+        margin:15,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                nav:true
+            },
+            600:{
+                items:2,
+                nav:true
+            },
+            1000:{
+                items:3,
+                nav:true,
+                loop:true
+            }
+        }
+    })
     
   });
 

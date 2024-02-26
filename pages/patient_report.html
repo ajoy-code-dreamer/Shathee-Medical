@@ -6,6 +6,14 @@
     <title>Shathee Medical</title>
     <link rel="icon" href="../images/fav_icon.png" />
     <title>All Recipes</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Font Awesome CSS CDN Link -->
     <link
       rel="stylesheet"
@@ -51,175 +59,253 @@
                   <div class="col-12">
                     <div class="recipe_top_heading">
                       <div class="recipe_heading">
-                        <h2>Tests & Results</h2>
+                        <p>Doctor’s Report</p>
+                        <h2>
+                          Let’s go through the doctor’s report,
+                          <span>Sabrina!</span>
+                        </h2>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <div class="test_results">
-                      <table class="table table-hover">
-                        <thead>
-                          <tr>
-                            <th scope="col">Tests</th>
-                            <th scope="col">Upload Date</th>
-                            <th scope="col">Test Date</th>
-                            <th scope="col">Result</th>
-                            <th scope="col">Edit</th>
-                            <th scope="col">Delete</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">Blood Pressure</th>
-                            <td>10/10/2020</td>
-                            <td>10/10/2020</td>
-                            <td>140/80</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Blood Pressure</th>
-                            <td>10/11/2020</td>
-                            <td>10/11/2020</td>
-                            <td>140/80</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Blood Pressure</th>
-                            <td>10/12/2020</td>
-                            <td>10/12/2020</td>
-                            <td>140/80</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Blood Sugar</th>
-                            <td>10/10/2020</td>
-                            <td>10/10/2020</td>
-                            <td>120/60</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Blood Sugar</th>
-                            <td>10/10/2020</td>
-                            <td>10/10/2020</td>
-                            <td>120/60</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Blood Sugar</th>
-                            <td>10/10/2020</td>
-                            <td>10/10/2020</td>
-                            <td>120/60</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Weight</th>
-                            <td>10/10/2020</td>
-                            <td>10/10/2020</td>
-                            <td>65 KG</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Weight</th>
-                            <td>10/10/2020</td>
-                            <td>10/10/2020</td>
-                            <td>65 KG</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Weight</th>
-                            <td>10/10/2020</td>
-                            <td>10/10/2020</td>
-                            <td>65 KG</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <th>Weight</th>
-                            <td>10/10/2020</td>
-                            <td>10/10/2020</td>
-                            <td>65 KG</td>
-                            <td>
-                              <i class="fa-solid fa-pencil"></i>
-                            </td>
-                            <td>
-                              <i class="fa-regular fa-trash-can color"></i>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+
+                  <div class="col-6">
+                    <div class="patient_profile_content ingredients">
+                      <div
+                        class="patient_profile d-flex justify-content-between"
+                      >
+                        <div class="patients_details">
+                          <p>Consulted by:</p>
+                          <h5>Dr. Amita Farzana</h5>
+                          <p>
+                            <i class="fa-regular fa-calendar"></i>
+                            <span>August 2023</span>
+                          </p>
+                        </div>
+                        <div class="patient_profile_img">
+                          <picture>
+                            <img
+                              src="../images/patient_report/patient_profile_pic.png"
+                              alt="profile image"
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                      <div class="patient_summary">
+                        <h3 class="summary_title">Summary</h3>
+                        <p class="join_time">
+                          You joined Shathee on 14th March, 2023
+                        </p>
+                        <p>
+                          Based on your lab reports and consultation with the
+                          physician, you have managed to CONTROL your DIABETES &
+                          BLOOD PRESSURES. Keep up the good work! You need to
+                          further Lower your Weight and Manage your diet and
+                          sleeping patterns for better overall health.
+                        </p>
+                        <h3 class="summary_title">Advice & Management Plan</h3>
+                        <p>
+                          Based on your lab reports and consultation with the
+                          physician, you have managed to CONTROL your DIABETES &
+                          BLOOD PRESSURES.
+                        </p>
+                        <p>
+                          Keep up the good work! You need to further Lower your
+                          Weight and Manage your diet and sleeping patterns for
+                          better overall health.
+                        </p>
+                        <p>
+                          Based on your lab reports and consultation with the
+                          physician, you have managed to CONTROL your DIABETES &
+                          BLOOD PRESSURES.
+                        </p>
+                        <p>
+                          Keep up the good work! You need to further Lower your
+                          Weight and Manage your diet and sleeping patterns for
+                          better overall health.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-12">
-                    <nav
-                      aria-label="Page navigation"
-                      class="patient_pagination"
-                    >
-                      <ul class="pagination gap-1">
-                        <li class="page-item">
-                          <a class="page-link" href="#"
-                            ><i class="fa-solid fa-angle-left"></i
-                          ></a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">1</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">2</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#">3</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" href="#"
-                            ><i class="fa-solid fa-angle-right"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </nav>
+                  <div class="col-6">
+                    <div class="goals ingredients">
+                      <h4 class="goal_title">Goals</h4>
+                      <div class="goal_content d-flex justify-content-between">
+                        <ul>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >Lowering blood pressure
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >Lowering blood sugar
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >Healthy diet
+                          </li>
+                          <li class="d-flex align-items-center gap-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >Sleeping better
+                          </li>
+                        </ul>
+                        <div class="goal_img">
+                          <picture>
+                            <img
+                              src="../images/patient_report/goal.png"
+                              alt="goal"
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prescription ingredients">
+                      <h4 class="title">Prescription</h4>
+                      <div class="prescription_content">
+                        <ul>
+                          <li>
+                            <p class="prescription_title">Medication</p>
+                            <p class="prescription_title text-center">
+                              Indication
+                            </p>
+                            <p class="prescription_title text-center">Dosage</p>
+                          </li>
+                          <li>
+                            <p class="medication">Medicine 1</p>
+                            <p class="indication text-center">
+                              Blood Sugar Regulation
+                            </p>
+                            <p class="dosage text-center">
+                              <span class="bg">1</span>
+                              +
+                              <span class="no_bg">0</span>
+                              +
+                              <span class="bg">1</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p class="medication">Medicine 2</p>
+                            <p class="indication text-center">
+                              Blood Sugar Regulation
+                            </p>
+                            <p class="dosage text-center">
+                              <span class="bg">1</span>
+                              +
+                              <span class="no_bg">0</span>
+                              +
+                              <span class="bg">1</span>
+                            </p>
+                          </li>
+                          <li>
+                            <p class="medication">Medicine 3</p>
+                            <p class="indication text-center">
+                              Blood Sugar Regulation
+                            </p>
+                            <p class="dosage text-center">
+                              <span class="bg">1</span>
+                              +
+                              <span class="no_bg">0</span>
+                              +
+                              <span class="bg">1</span>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="recent_tests ingredients">
+                      <h4 class="title">Prescription</h4>
+                      <div class="recent_tests_content">
+                        <ul>
+                          <li>
+                            <p class="recent_tests_title">Test</p>
+                            <p class="recent_tests_title text-center">Result</p>
+                            <p class="recent_tests_title text-center">
+                              Remarks
+                            </p>
+                          </li>
+                          <li>
+                            <p class="test">HbA1c</p>
+                            <p class="result text-center">10.4/9.0</p>
+                            <p class="remarks text-center">
+                              <a href="#" class="btn high">High</a>
+                            </p>
+                          </li>
+                          <li>
+                            <p class="test">S. Creatinine</p>
+                            <p class="result text-center">1.4/9.0</p>
+                            <p class="remarks text-center">
+                              <a href="#" class="btn normal">Normal</a>
+                            </p>
+                          </li>
+                          <li>
+                            <p class="test">Lipid Profile</p>
+                            <p class="result text-center">10.4/9.0</p>
+                            <p class="remarks text-center">
+                              <a href="#" class="btn high">High</a>
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8">
+                      <div class="medical_history_wrapper ingredients">
+                        <h4 class="title">Past Medical History</h4>
+                        <div class="past_medical_history owl-carousel">
+                          <div class="single_history item">
+                            <h4>C-Section</h4>
+                            <p>Surgery in 2014</p>
+                          </div>
+                          <div class="single_history item">
+                            <h4>Diabetes</h4>
+                            <p>Diagnosed in 2013</p>
+                          </div>
+                          <div class="single_history item">
+                            <h4>HTN</h4>
+                            <p>Surgery in 2014</p>
+                          </div>
+                          <div class="single_history item">
+                            <h4>C-Section</h4>
+                            <p>Surgery in 2014</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="report_download ingredients">
+                        <p>Select Report Month</p>
+                       <div class="input_field">
+                        <input
+                        type="text"
+                        name="report_time"
+                        class="report_time"
+                        onfocus="this.type='date'"
+                        placeholder="July 2023"
+                        onblur="this.type='text'"
+                      />
+                      <div class="arrow_btn"><i class="fa-solid fa-angle-down"></i></div>
+                       </div>
+
+                        <div class="download_btn">
+                          <a href="#" class="btn"
+                            ><i class="fa-solid fa-cloud-arrow-down"></i>
+                            <span>Download Report</span></a
+                          >
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -239,9 +325,21 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- JQuery CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
-    <!-- FontAwesome JS CDN link -->
-
+    <!-- OwlCarousel CDN Link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <!-- Custom JS Link -->
     <script src="../js/script.js"></script>
   </body>
