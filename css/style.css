@@ -578,7 +578,7 @@ body {
   margin-bottom: 12px;
 }
 .weight_detailsItem {
-  width: 288px;
+  max-width: 288px;
   display: flex;
   justify-content: space-between;
   align-items: center;
