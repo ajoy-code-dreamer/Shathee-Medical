@@ -1,10 +1,6 @@
 /* ======== responsive css ======== */
 /* ========================= device (xs 0 > 576) ========================= */
 @media (max-width: 575.98px) {
-  body,
-  html {
-    font-size: 50%;
-  }
   .main_row {
     margin: 0 auto;
   }
@@ -96,6 +92,38 @@
   }
   .diet_details {
     font-size: 12px;
+  }
+  .recipe_img {
+    height: auto;
+    width: auto;
+  }
+  .slider_btns a {
+    margin-bottom: 15px;
+  }
+  .single_recipe_today {
+    margin-bottom: 20px;
+  }
+  .slider_item.item {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .recipe_content h2 {
+    padding-top: 0px;
+    font-size: 20px;
+  }
+  .recipe_top_heading {
+    height: auto;
+    padding: 15px;
+  }
+  h2.section_header {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .recipe_wrapper {
+    padding: 25px;
+  }
+  .prescription.ingredients {
+    padding: 15px;
   }
 }
 /* ========================= device (xs 0 > 576) ========================= */
@@ -203,6 +231,30 @@
     margin: 0 20px;
     margin-bottom: 20px;
   }
+  .recipe_content h2 {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .recipe_content {
+    padding: 20px;
+  }
+  .slider_item.item {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .single_recipe_today {
+    margin-bottom: 20px;
+  }
+  h2.section_header {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .recipe_wrapper {
+    padding: 25px;
+  }
+  .prescription.ingredients {
+    padding: 15px;
+  }
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
@@ -291,6 +343,25 @@
     margin: 0 20px;
     margin-bottom: 20px;
   }
+  .slider_item.item {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .recipe_content {
+    padding: 20px;
+  }
+  .recipe_content h2 {
+    padding-top: 0px;
+  }
+  .single_recipe_today {
+    margin-bottom: 20px;
+  }
+  h2.section_header {
+    margin-top: 25px;
+  }
+  .recipe_wrapper {
+    padding: 25px;
+  }
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -328,6 +399,15 @@
   }
   .suggest_videoCardWrapper.bpPage_CommonCard.related_cardWrapper {
     margin-top: 20px;
+  }
+  .slider_item.item {
+    gap: 15px;
+  }
+  .recipe_content {
+    padding: 20px;
+  }
+  .recipe_wrapper {
+    padding: 25px;
   }
 }
 /* ========================= device (lg 992 > 1200) ========================= */

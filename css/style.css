@@ -87,12 +87,14 @@ div {
 img {
   vertical-align: middle;
 }
-body,html {
+body,
+html {
   position: relative;
   font-family: var(--primary-font);
-  font-size: 80%;
 }
-
+main {
+  overflow: hidden;
+}
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -213,7 +215,7 @@ body,html {
   color: var(--white-clr);
 }
 /* ==== right side design ====== */
-.main_dashboardWrapper{
+.main_dashboardWrapper {
   padding: 40px 0;
 }
 .user_interfaceWrapper {

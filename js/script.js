@@ -182,6 +182,7 @@ $(function(){
           ]
     });
 
+    
 
     // ==== slick slider operation ====
 

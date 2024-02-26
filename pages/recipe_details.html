@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shathee Medical</title>
+    <link rel="icon" href="../images/fav_icon.png" />
+    <title>Recipe Details</title>
+    <!-- Font Awesome CSS CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/patient_report.css" />
+    <link rel="stylesheet" href="../css/recipepage.css" />
+    <link rel="stylesheet" href="../css/upload_management.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- =========== dashboard design start here ========== -->
+    <main>
+      <div class="recipe_details">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 p-0">
+              <div class="sidebar_wrapper navbar-expand-lg h-100 me-lg-3">
+                <div class="brand_logo">
+                  <a href="#">
+                    <picture>
+                      <img
+                        src="../images/brand_logo.png"
+                        alt="./images/brand_logo.png"
+                        title="logo"
+                        class="img-fluid"
+                      />
+                    </picture>
+                  </a>
+                </div>
+                <div class="dashboard_userWrapper">
+                  <div class="user_imageWrapper">
+                    <picture>
+                      <img
+                        src="../images/user_img-1.png"
+                        alt="../images/user_img-1.png"
+                        title="image"
+                        class="img-fluid"
+                      />
+                    </picture>
+                  </div>
+                  <div class="user_detailsWrapper">
+                    <h3 class="user_names">Sabrina Ritu</h3>
+                    <p class="user_lastLogin">
+                      Last Login:
+                      <span class="user_lastLoginDate">09 Aug, 2023</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="sidebar_menuWrapper">
+                  <ul class="nav_menu nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">
+                        <div class="nav_icon">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_1913_8427)">
+                              <path
+                                d="M4 13H10C10.55 13 11 12.55 11 12V4C11 3.45 10.55 3 10 3H4C3.45 3 3 3.45 3 4V12C3 12.55 3.45 13 4 13ZM4 21H10C10.55 21 11 20.55 11 20V16C11 15.45 10.55 15 10 15H4C3.45 15 3 15.45 3 16V20C3 20.55 3.45 21 4 21ZM14 21H20C20.55 21 21 20.55 21 20V12C21 11.45 20.55 11 20 11H14C13.45 11 13 11.45 13 12V20C13 20.55 13.45 21 14 21ZM13 4V8C13 8.55 13.45 9 14 9H20C20.55 9 21 8.55 21 8V4C21 3.45 20.55 3 20 3H14C13.45 3 13 3.45 13 4Z"
+                                fill="white"
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1913_8427">
+                                <rect width="24" height="24" fill="" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        Dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        Reports
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-bell"></i>
+                        </div>
+                        Notifications
+                        <span class="badge rounded-pill bg-danger">4</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-gear"></i>
+                        </div>
+                        Settings
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </div>
+                        Log Out
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /col-3 -->
+
+            <div class="col-lg-9">
+              <div class="recipe_wrapper">
+                <div class="recipe_top_wrapper">
+                  <div class="row">
+                    <div class="col-sm col-xl-7 col-lg-12 p-0">
+                      <div class="recipe_img">
+                        <img
+                          src="../images/recipe_img/recipe_big.png"
+                          alt="recipe img"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-sm col-xl-5 col-lg-12 p-0">
+                      <div class="recipe_content">
+                        <h2>Chicken and Butternut Squash Stir-Fry</h2>
+                        <p>
+                          This is both gout and diabetes-friendly. This recipe
+                          incorporates lean protein from chicken and
+                          low-glycemic butternut squash, making it a balanced
+                          and delicious option. A great substitute for those
+                          wanting lower calories would be green, raw papaya;
+                          bottle gourd (lau), in which case you could substitute
+                          the red bell pepper to green or yellow.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="recipe_bottom_wrapper">
+                  <div class="row">
+                    <div class="col-lg-7 col-sm-12 p-0">
+                      <div class="instructions">
+                        <h4>Instructions:</h4>
+                        <p class="title">Prepare the Chicken and Vegetables:</p>
+                        <ul>
+                          <li>
+                            Season the chicken slices with a pinch of salt and
+                            pepper.
+                          </li>
+                          <li>
+                            Heat 1 tablespoon of olive oil in a large pan or
+                            skillet or wok over medium-high heat.
+                          </li>
+                          <li>
+                            Add the chicken slices and cook until they are
+                            browned and cooked through (a little bit of char
+                            will add more flavor later). Remove the chicken from
+                            the skillet, leaving as much oil as possible in the
+                            pan and set aside.
+                          </li>
+                        </ul>
+                        <p class="title">Sauté the Vegetables:</p>
+                        <ul>
+                          <li>
+                            In the same skillet, add a bit more oil if needed,
+                            then add the minced garlic and ginger. Sauté for
+                            about a minute until fragrant.
+                          </li>
+                          <li>
+                            Add the sliced onions and cook for 1-2 minutes until
+                            they start to soften.
+                          </li>
+                          <li>
+                            Add the butternut squash cubes and cook for about
+                            6-8 minutes, then add red bell pepper slices. Cook
+                            for 5-6 minutes, stirring occasionally, until the
+                            vegetables are tender but still slightly crisp. If
+                            you wish, go nuts with more vegetables here like
+                            broccoli, snap peas, baby corn and spinach (all
+                            inflammation friendly and take about 3-4 minutes to
+                            cook through)
+                          </li>
+                        </ul>
+                        <p class="title">Combine and Finish:</p>
+                        <ul>
+                          <li>
+                            Return the cooked chicken to the skillet with the
+                            sautéed vegetables.
+                          </li>
+                          <li>
+                            Cover and cook for an additional 2-3 minutes until
+                            the chicken and veggies have heated through.
+                          </li>
+                          <li>
+                            Taste and adjust seasoning with salt and pepper if
+                            necessary. Maybe a sprinkle of chilli flakes
+                          </li>
+                        </ul>
+                        <p class="title">Serve:</p>
+                        <ul>
+                          <li>Divide the stir-fry among plates or bowls.</li>
+                          <li>
+                            Garnish with fresh cilantro for added freshness and
+                            flavor. Add a smattering (1 tsp) of dry toasted
+                            sesame seeds/flaked almonds/peanuts for some added
+                            texture.
+                          </li>
+                        </ul>
+                        <p class="title last">
+                          This Chicken and Butternut Squash Stir-Fry is packed
+                          with protein, fiber, and vitamins, making it a healthy
+                          choice for those with diabetes and gout concerns. 
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-12 p-0">
+                      <div class="ingredients">
+                        <h4>Ingredients</h4>
+                        <ul>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >2 boneless, skinless chicken breasts, thinly sliced
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >2 cups butternut squash, peeled and cubed into
+                            small pieces
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >1 red bell pepper, thinly sliced
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >1 small onion, thinly sliced
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >4-6 cloves garlic, minced 1 tablespoon olive oil
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >1 teaspoon ginger, minced
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >Salt and pepper to taste
+                          </li>
+                          <li class="d-flex align-items-center gap-3 mb-3">
+                            <span class="list_icon"
+                              ><img
+                                src="../images/recipe_img/ingredients_icon.png"
+                                alt="icon" /></span
+                            >Fresh coriander for garnish
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="indredients_btns">
+                        <a href="#" class="btn">Gout Friendly</a>
+                        <a href="#" class="btn">Diabetes Friendly</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /col-9 -->
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- =========== dashboard design end here ========== -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/app.js"></script>
+  </body>
+</html>
