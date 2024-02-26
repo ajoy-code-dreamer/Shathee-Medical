@@ -65,6 +65,38 @@
     margin: 0 20px;
     margin-bottom: 20px;
   }
+  .pAndM_toDoListWrapperMain {
+    margin: 0 20px;
+  }
+  .toDo_itemWrapper {
+    margin-bottom: 20px;
+  }
+  .averageSleep_cardWrapper {
+    margin: 0 20px 20px 20px;
+  }
+  .small_cardWrapper {
+    margin: 0 20px;
+  }
+  .suggest_prevArrow,
+  .suggest_nextArrow {
+    font-size: 10px;
+  }
+  .bp_averageResultsWrapper {
+    padding: 55px 0 30px 0;
+  }
+  .suggest_videoCardWrapper,
+  .bp_chartWrapperMain,
+  .bp_contentDetailsPartWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .suggest_title {
+    column-gap: 5px;
+    font-size: 14px;
+  }
+  .diet_details {
+    font-size: 12px;
+  }
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
@@ -138,6 +170,39 @@
     margin: 0 20px;
     margin-bottom: 20px;
   }
+  .bp_cardWrapper.bp_grpah_wrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.sugar_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .weight_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .pAndM_toDoListWrapperMain {
+    margin: 0 20px;
+  }
+  .toDo_itemWrapper {
+    margin-bottom: 20px;
+  }
+  .averageSleep_cardWrapper {
+    margin: 0 20px 20px 20px;
+  }
+  .small_cardWrapper {
+    margin: 0 20px;
+  }
+  .bp_averageResultsWrapper {
+    padding: 55px 0 30px 0;
+  }
+  .suggest_videoCardWrapper,
+  .bp_chartWrapperMain,
+  .bp_contentDetailsPartWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
@@ -178,6 +243,54 @@
     flex-direction: column;
     row-gap: 10px;
   }
+  .user_interfaceWrapper {
+    margin: 0 20px;
+  }
+  .bp_cardWrapper.bp_grpah_wrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.sugar_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .weight_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.bp_grpah_wrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.sugar_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .weight_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .pAndM_toDoListWrapperMain {
+    margin: 0 20px;
+  }
+  .toDo_itemWrapper {
+    margin-bottom: 20px;
+  }
+  .averageSleep_cardWrapper {
+    margin: 0 20px 20px 20px;
+  }
+  .small_cardWrapper {
+    margin: 0 20px;
+  }
+  .bp_averageResultsWrapper {
+    padding: 55px 0 30px 0;
+  }
+  .suggest_videoCardWrapper,
+  .bp_chartWrapperMain,
+  .bp_contentDetailsPartWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -210,6 +323,12 @@
     flex-direction: column;
     row-gap: 10px;
   }
+  .small_cardWrapper.small_insightCardWrapper {
+    padding: 20px 10px;
+  }
+  .suggest_videoCardWrapper.bpPage_CommonCard.related_cardWrapper {
+    margin-top: 20px;
+  }
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
@@ -224,7 +343,7 @@
   .nav_menu {
     margin-top: 20px;
   }
-  .download_btn.common_btn{
+  .download_btn.common_btn {
     padding: 7px;
     font-size: 12px;
   }
