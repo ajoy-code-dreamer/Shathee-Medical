@@ -337,6 +337,11 @@ main {
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
 }
+.bpPageSrc,
+.glucosePageSrc,
+.physicalPageSrc{
+  cursor: pointer;
+}
 .bp_cardWrapper {
   padding: 31px 40px 17px;
   background-color: var(--white-clr);
