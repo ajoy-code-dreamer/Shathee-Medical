@@ -1,39 +1,98 @@
 /* ======== responsive css ======== */
 /* ========================= device (xs 0 > 576) ========================= */
 @media (max-width: 575.98px) {
-	
+  .brand_logo {
+    width: 160px;
+    padding-bottom: 10px;
+  }
+  .sidebar_wrapper {
+    padding: 20px 40px 40px;
+  }
+  .dashboard_userWrapper {
+    padding: 10px 0px;
+  }
+  .nav_menu {
+    margin-top: 20px;
+    row-gap: 10px;
+  }
+  .nav-link {
+    padding-left: 50px;
+    width: auto;
+  }
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
 /* ========================= device (sm 576 > 768) ========================= */
 @media (min-width: 576px) and (max-width: 767.98px) {
-	
+  .brand_logo {
+    width: 200px;
+    padding-bottom: 10px;
+  }
+  .sidebar_wrapper {
+    padding: 20px 40px 40px;
+  }
+  .dashboard_userWrapper {
+    padding: 10px 0px;
+  }
+  .nav_menu {
+    margin-top: 20px;
+    row-gap: 10px;
+  }
+  .nav-link {
+    padding-left: 70px;
+  }
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
 /* ========================= device (md 768 > 992) ========================= */
 @media (min-width: 768px) and (max-width: 991.98px) {
-	
+  .brand_logo {
+    width: 220px;
+    padding-bottom: 10px;
+  }
+  .sidebar_wrapper {
+    padding: 20px 40px 40px;
+  }
+  .dashboard_userWrapper {
+    padding: 10px 0px;
+  }
+  .nav_menu {
+    margin-top: 20px;
+  }
 }
 /* ========================= device (md 768 > 992) ========================= */
 
 /* ========================= device (lg 992 > 1200) ========================= */
 @media (min-width: 992px) and (max-width: 1199.98px) {
-	
+  .sidebar_wrapper {
+    padding: 20px 10px 20px 10px;
+}
+.dashboard_userWrapper {
+  padding: 10px 0px;
+}
+.nav_menu {
+  margin-top: 20px;
+}
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
 /* ========================= device (xl 1200 > 1400) ========================= */
 @media (min-width: 1200px) and (max-width: 1400px) {
-	
+  .sidebar_wrapper {
+    padding: 40px 20px 40px 20px;
+}
+.dashboard_userWrapper {
+  padding: 10px 0px;
+}
+.nav_menu {
+  margin-top: 20px;
+}
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
 @media (min-width: 1400px) {
-
 }
 /* ========================= device (xxl 1400 >>) ========================= */
 /* ======== responsive css ======== */
-
 
 /* ===== design by AJOY SAHA ===== */
