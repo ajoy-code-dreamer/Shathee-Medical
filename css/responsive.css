@@ -11,6 +11,9 @@
   .sidebar_wrapper {
     padding: 20px 40px 40px;
   }
+  .sidebar_menuWrapper {
+    width: 100%;
+  }
   .dashboard_userWrapper {
     padding: 10px 0px;
   }
@@ -143,6 +146,9 @@
   .dashboard_userWrapper {
     padding: 10px 0px;
   }
+  .sidebar_menuWrapper {
+    width: 100%;
+  }
   .nav_menu {
     margin-top: 20px;
     row-gap: 10px;
@@ -273,6 +279,9 @@
   .sidebar_wrapper {
     padding: 20px 40px 40px;
   }
+  .sidebar_menuWrapper {
+    width: 100%;
+  }
   .dashboard_userWrapper {
     padding: 10px 0px;
   }
@@ -387,6 +396,9 @@
   .dashboard_userWrapper {
     padding: 10px 0px;
     justify-content: start;
+  }
+  .sidebar_menuWrapper {
+    width: 100%;
   }
   .nav_menu {
     margin-top: 20px;
