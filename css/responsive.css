@@ -107,23 +107,73 @@
     gap: 15px;
     grid-template-columns: 1fr;
   }
+  .recipe_content {
+    padding: 30px;
+  }
   .recipe_content h2 {
     padding-top: 0px;
     font-size: 20px;
   }
   .recipe_top_heading {
     height: auto;
+    grid-template-columns: 1fr;
     padding: 15px;
+    margin-top: 30px;
   }
   h2.section_header {
     font-size: 20px;
     margin-top: 15px;
   }
   .recipe_wrapper {
-    padding: 25px;
+    padding: 0px;
   }
   .prescription.ingredients {
     padding: 15px;
+  }
+  .recent_tests.ingredients,
+  .goals.ingredients,
+  .patient_profile_content.ingredients {
+    padding: 20px 15px;
+  }
+  .prescription.ingredients {
+    padding: 10px;
+    font-size: 80%;
+  }
+  .recent_tests ul li,
+  .prescription_content ul li {
+    padding-left: 10px;
+  }
+  .single_history h4 {
+    font-size: 16px;
+  }
+  .single_history p {
+    font-size: 12px;
+  }
+  .report_download.ingredients,
+  .medical_history_wrapper.ingredients {
+    padding: 20px;
+    margin: 0 14px;
+  }
+  .report_download.ingredients {
+    margin-top: 20px;
+  }
+  .instructions {
+    padding: 15px;
+  }
+  .ingredients {
+    padding: 20px;
+    margin: 0 15px;
+  }
+  .indredients_btns {
+    padding: 20px;
+  }
+  .test_results table thead tr th,
+  .test_results table tbody tr td,
+  .test_results table tbody tr th {
+    font-size: 10px;
+  }
+  .test_results {
+    padding: 0;
   }
 }
 /* ========================= device (xs 0 > 576) ========================= */
@@ -235,9 +285,7 @@
     padding-top: 10px;
     font-size: 20px;
   }
-  .recipe_content {
-    padding: 20px;
-  }
+
   .slider_item.item {
     gap: 15px;
     grid-template-columns: 1fr;
@@ -254,6 +302,45 @@
   }
   .prescription.ingredients {
     padding: 15px;
+  }
+  .recipe_wrapper {
+    padding: 25px;
+  }
+  .prescription.ingredients {
+    padding: 15px;
+  }
+  .recent_tests.ingredients,
+  .goals.ingredients,
+  .patient_profile_content.ingredients {
+    padding: 20px 15px;
+  }
+  .prescription.ingredients {
+    padding: 10px;
+    font-size: 80%;
+  }
+  .recent_tests ul li,
+  .prescription_content ul li {
+    padding-left: 10px;
+  }
+  .single_history h4 {
+    font-size: 16px;
+  }
+  .single_history p {
+    font-size: 12px;
+  }
+  .report_download.ingredients,
+  .medical_history_wrapper.ingredients {
+    padding: 20px;
+    margin: 0 14px;
+  }
+  .report_download.ingredients {
+    margin-top: 20px;
+  }
+  .recipe_top_wrapper .recipe_img img {
+    padding: 0 15px;
+  }
+  .recipe_content {
+    padding: 30px;
   }
 }
 /* ========================= device (sm 576 > 768) ========================= */
@@ -347,9 +434,6 @@
     gap: 15px;
     grid-template-columns: 1fr;
   }
-  .recipe_content {
-    padding: 20px;
-  }
   .recipe_content h2 {
     padding-top: 0px;
   }
@@ -402,9 +486,6 @@
   }
   .slider_item.item {
     gap: 15px;
-  }
-  .recipe_content {
-    padding: 20px;
   }
   .recipe_wrapper {
     padding: 25px;

@@ -6,6 +6,10 @@
 @import url(../css/bloodPressure.css);
 @import url(../css/bloodSugar.css);
 @import url(../css/physicalMetal.css);
+@import url(../css/recipepage.css);
+@import url(../css/upload_management.css);
+@import url(../css/patient_report.css);
+
 /* ========= others pages css file =========== */
 /* ============ css variables ============= */
 :root {
