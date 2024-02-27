@@ -18,4 +18,3 @@ physicalPage.addEventListener("click", () => {
       });
 
 
-      console.log(physicalPage)
