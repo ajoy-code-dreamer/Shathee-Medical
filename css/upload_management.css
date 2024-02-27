@@ -1,6 +1,7 @@
 .test_results {
   background: var(--white-clr);
   border-radius: 10px;
+  padding: 10px 15px;
 }
 .test_results table {
   border-color: #e8e8e8;

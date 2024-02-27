@@ -1,6 +1,9 @@
 /* ======== responsive css ======== */
 /* ========================= device (xs 0 > 576) ========================= */
 @media (max-width: 575.98px) {
+  .ingredients {
+    padding: 20px;
+  }
   .main_row {
     margin: 0 auto;
   }
@@ -99,6 +102,7 @@
   .recipe_img {
     height: auto;
     width: auto;
+    padding: 0 10px;
   }
   .slider_btns a {
     margin-bottom: 15px;
@@ -110,6 +114,9 @@
     gap: 15px;
     grid-template-columns: 1fr;
   }
+  .recipe_content {
+    padding: 22px;
+  }
   .recipe_content h2 {
     padding-top: 0px;
     font-size: 20px;
@@ -117,19 +124,52 @@
   .recipe_top_heading {
     height: auto;
     padding: 15px;
+    grid-template-columns: 1fr;
   }
   h2.section_header {
     font-size: 20px;
     margin-top: 15px;
   }
   .recipe_wrapper {
-    padding: 25px;
+    padding: 0;
   }
   .prescription.ingredients {
-    padding: 15px;
+    padding: 10px;
   }
   .navbar-collapse {
     align-items: start;
+  }
+  .recipe_heading h2 {
+    font-size: 20px;
+  }
+  .goals.ingredients,
+  .patient_profile_content.ingredients {
+    padding: 20px 15px;
+  }
+  .recent_tests ul li,
+  .prescription_content ul li {
+    padding-left: 0px;
+  }
+  .medical_history_wrapper.ingredients,
+  .recent_tests.ingredients {
+    padding: 20px 10px;
+  }
+  .instructions {
+    padding: 20px;
+  }
+  .indredients_btns {
+    margin-left: 30px;
+  }
+  .test_results {
+    padding: 0;
+  }
+  .test_results table thead tr th,
+  .test_results table tbody tr td,
+  .test_results table tbody tr th {
+    font-size: 10px;
+  }
+  .test_results table i.color {
+    padding-left: 5px;
   }
 }
 /* ========================= device (xs 0 > 576) ========================= */
@@ -266,6 +306,21 @@
   }
   .navbar-collapse {
     align-items: start;
+  }
+  .recipe_heading h2 {
+    font-size: 20px;
+  }
+  .goals.ingredients,
+  .patient_profile_content.ingredients {
+    padding: 20px 15px;
+  }
+  .recent_tests ul li,
+  .prescription_content ul li {
+    padding-left: 0px;
+  }
+  .medical_history_wrapper.ingredients,
+  .recent_tests.ingredients {
+    padding: 20px 10px;
   }
 }
 /* ========================= device (sm 576 > 768) ========================= */
