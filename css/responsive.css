@@ -42,7 +42,7 @@
     place-items: center;
     margin: 0 20px;
   }
-  .recipe_routineWrapper a {
+  .recipe_routineWrapper .view_allRecipe {
     margin-top: 20px;
     text-align: center;
   }
@@ -424,6 +424,9 @@
   .recipe_wrapper {
     padding: 25px;
   }
+  .navbar-collapse {
+    align-items: start;
+  }
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
@@ -447,10 +450,16 @@
     padding: 7px;
     font-size: 12px;
   }
+  .navbar-collapse {
+    align-items: start;
+  }
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
 @media (min-width: 1400px) {
+  .navbar-collapse {
+    align-items: start;
+  }
   .sidebar_wrapper {
     padding: 40px 20px 40px 20px;
     display: flex;
@@ -460,6 +469,7 @@
     align-items: start;
   }
 }
+
 /* ========================= device (xxl 1400 >>) ========================= */
 /* ======== responsive css ======== */
 

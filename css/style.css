@@ -247,9 +247,10 @@ main {
   -o-border-radius: 4px;
   outline: none;
 }
-.navbar-toggler{
+.navbar-toggler:focus{
   outline: none !important;
   border: none !important;
+  box-shadow: none;
 }
 
 
