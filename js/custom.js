@@ -1,20 +1,20 @@
 const bpPage = document.querySelector(".bpPageSrc");
 
       bpPage.addEventListener("click", () => {
-        window.location.href = "../pages/bloodPressure.html";
+        window.open("../pages/bloodPressure.html");
       });
 
 const glucosePage = document.querySelector(".glucosePageSrc");
 
 glucosePage.addEventListener("click", () => {
-        window.location.href = "../pages/bloodSugar.html";
+        window.open("../pages/bloodSugar.html");
       });
 
 
 const physicalPage = document.querySelector(".physicalPageSrc");
 
 physicalPage.addEventListener("click", () => {
-        window.location.href = "../pages/physicalMental.html";
+        window.open("../pages/physicalMental.html");
       });
 
 
