@@ -125,6 +125,9 @@
   .prescription.ingredients {
     padding: 15px;
   }
+  .navbar-collapse {
+    align-items: start;
+  }
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
@@ -255,6 +258,9 @@
   .prescription.ingredients {
     padding: 15px;
   }
+  .navbar-collapse {
+    align-items: start;
+  }
 }
 /* ========================= device (sm 576 > 768) ========================= */
 
@@ -362,6 +368,9 @@
   .recipe_wrapper {
     padding: 25px;
   }
+  .navbar-collapse {
+    align-items: start;
+  }
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -369,9 +378,15 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .sidebar_wrapper {
     padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
   }
   .dashboard_userWrapper {
     padding: 10px 0px;
+    justify-content: start;
   }
   .nav_menu {
     margin-top: 20px;
@@ -416,6 +431,11 @@
 @media (min-width: 1200px) and (max-width: 1400px) {
   .sidebar_wrapper {
     padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
   }
   .dashboard_userWrapper {
     padding: 10px 0px;
@@ -431,6 +451,14 @@
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
 @media (min-width: 1400px) {
+  .sidebar_wrapper {
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
+  }
 }
 /* ========================= device (xxl 1400 >>) ========================= */
 /* ======== responsive css ======== */
