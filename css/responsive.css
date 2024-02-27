@@ -182,6 +182,14 @@
   .feeling_caption{
     font-size: 12px;
   }
+  .feeling_heading{
+    font-size: 20px;
+    text-align: center;
+  }
+  .feeling_emoji_item{
+    display: flex;
+    justify-content: center;
+  }
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
