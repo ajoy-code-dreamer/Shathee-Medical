@@ -171,6 +171,17 @@
   .test_results table i.color {
     padding-left: 5px;
   }
+  .feeling_cardWrapper {
+    padding: 40px 10px;
+  }
+  .feeling_item {
+    row-gap: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .feeling_caption{
+    font-size: 12px;
+  }
 }
 /* ========================= device (xs 0 > 576) ========================= */
 
