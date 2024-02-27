@@ -80,7 +80,7 @@
   font-size: 80px;
   color: var(--card-text-clr);
 }
-.bp_cartWrapper {
+.bp_chartWrapper {
   padding: 35px 58px;
 }
 .bp_cardDateWrapper {
@@ -90,7 +90,7 @@
   text-align: end;
   padding-bottom: 33px;
 }
-.bp_cart {
+.bp_chart {
   display: flex;
   align-items: center;
   justify-content: center;
