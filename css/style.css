@@ -139,9 +139,19 @@ main {
 .sidebar_wrapper {
   background-color: var(--white-clr);
   padding: 40px 100px 40px 38px;
+  
 }
 .brand_logo {
   padding-bottom: 40px;
+}
+.navbar{
+  align-items: center;
+}
+.dashboard_navWrapper.navbar-collapse.collapse.show{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  
 }
 .dashboard_userWrapper {
   padding: 30px 0;
@@ -203,6 +213,11 @@ main {
 }
 .nav_icon {
   font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.nav_icon svg {
+  fill: #a3aed0;
 }
 .nav-link:hover {
   color: var(--white-clr);
@@ -218,6 +233,31 @@ main {
 .nav-link.active .nav_icon {
   color: var(--white-clr);
 }
+.nav-link.active .nav_icon svg {
+  fill: var(--white-clr);
+}
+.nav-link:hover .nav_icon svg {
+  fill: var(--white-clr);
+}
+.collapse_bar{
+  font-size: 18px;
+  color: var(--card-text-clr);
+  border: 1px solid var(--card-text-clr);
+  padding: 3px 7px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  outline: none;
+}
+.navbar-toggler:focus{
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+
 /* ==== right side design ====== */
 .main_dashboardWrapper {
   padding: 40px 0;
@@ -340,6 +380,11 @@ main {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+}
+.bpPageSrc,
+.glucosePageSrc,
+.physicalPageSrc {
+  cursor: pointer;
 }
 .bp_cardWrapper {
   padding: 31px 40px 17px;

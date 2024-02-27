@@ -42,14 +42,14 @@
     place-items: center;
     margin: 0 20px;
   }
-  .recipe_routineWrapper a {
+  .recipe_routineWrapper .view_allRecipe {
     margin-top: 20px;
     text-align: center;
   }
   .bp_contentDetailsPartWrapper.bpPage_CommonCard {
     padding: 30px 20px;
   }
-  .bp_cardWrapper.bp_grpah_wrapper {
+  .bp_cardWrapper.bp_graph_wrapper {
     margin: 0 25px;
     margin-bottom: 20px;
   }
@@ -130,6 +130,7 @@
   .prescription.ingredients {
     padding: 15px;
   }
+<<<<<<< HEAD
   .recent_tests.ingredients,
   .goals.ingredients,
   .patient_profile_content.ingredients {
@@ -174,6 +175,10 @@
   }
   .test_results {
     padding: 0;
+=======
+  .navbar-collapse {
+    align-items: start;
+>>>>>>> 5d14ca59a2be639a721f5e5f54cf98259b6bdeac
   }
 }
 /* ========================= device (xs 0 > 576) ========================= */
@@ -236,7 +241,7 @@
   .bp_contentDetailsPartWrapper.bpPage_CommonCard {
     padding: 30px 20px;
   }
-  .bp_cardWrapper.bp_grpah_wrapper {
+  .bp_cardWrapper.bp_graph_wrapper {
     margin: 0 25px;
     margin-bottom: 20px;
   }
@@ -248,7 +253,7 @@
     margin: 0 20px;
     margin-bottom: 20px;
   }
-  .bp_cardWrapper.bp_grpah_wrapper {
+  .bp_cardWrapper.bp_graph_wrapper {
     margin: 0 25px;
     margin-bottom: 20px;
   }
@@ -303,6 +308,7 @@
   .prescription.ingredients {
     padding: 15px;
   }
+<<<<<<< HEAD
   .recipe_wrapper {
     padding: 25px;
   }
@@ -341,6 +347,10 @@
   }
   .recipe_content {
     padding: 30px;
+=======
+  .navbar-collapse {
+    align-items: start;
+>>>>>>> 5d14ca59a2be639a721f5e5f54cf98259b6bdeac
   }
 }
 /* ========================= device (sm 576 > 768) ========================= */
@@ -370,7 +380,7 @@
     text-align: center;
   }
   .bp_cardWrapper.sugar_cardWrapper,
-  .bp_grpah_wrapper {
+  .bp_graph_wrapper {
     display: grid;
     grid-template-columns: 1fr;
     place-items: center;
@@ -385,7 +395,7 @@
   .user_interfaceWrapper {
     margin: 0 20px;
   }
-  .bp_cardWrapper.bp_grpah_wrapper {
+  .bp_cardWrapper.bp_graph_wrapper {
     margin: 0 25px;
     margin-bottom: 20px;
   }
@@ -397,7 +407,7 @@
     margin: 0 20px;
     margin-bottom: 20px;
   }
-  .bp_cardWrapper.bp_grpah_wrapper {
+  .bp_cardWrapper.bp_graph_wrapper {
     margin: 0 25px;
     margin-bottom: 20px;
   }
@@ -446,6 +456,9 @@
   .recipe_wrapper {
     padding: 25px;
   }
+  .navbar-collapse {
+    align-items: start;
+  }
 }
 /* ========================= device (md 768 > 992) ========================= */
 
@@ -453,9 +466,15 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .sidebar_wrapper {
     padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
   }
   .dashboard_userWrapper {
     padding: 10px 0px;
+    justify-content: start;
   }
   .nav_menu {
     margin-top: 20px;
@@ -490,6 +509,9 @@
   .recipe_wrapper {
     padding: 25px;
   }
+  .navbar-collapse {
+    align-items: start;
+  }
 }
 /* ========================= device (lg 992 > 1200) ========================= */
 
@@ -497,6 +519,11 @@
 @media (min-width: 1200px) and (max-width: 1400px) {
   .sidebar_wrapper {
     padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
   }
   .dashboard_userWrapper {
     padding: 10px 0px;
@@ -508,11 +535,26 @@
     padding: 7px;
     font-size: 12px;
   }
+  .navbar-collapse {
+    align-items: start;
+  }
 }
 /* ========================= device (xl 1200 > 1400) ========================= */
 /* ========================= device (xxl 1400 >>) ========================= */
 @media (min-width: 1400px) {
+  .navbar-collapse {
+    align-items: start;
+  }
+  .sidebar_wrapper {
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
+  }
 }
+
 /* ========================= device (xxl 1400 >>) ========================= */
 /* ======== responsive css ======== */
 

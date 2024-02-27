@@ -28,7 +28,7 @@
         <div class="row main_row g-0">
           <!-- ===== left sidebar design ===== -->
           <div class="col-lg-3 p-0">
-            <div class="sidebar_wrapper navbar-expand-lg h-100 me-lg-3">
+            <div class="sidebar_wrapper navbar-expand-lg h-100 me-lg-3 navbar d-lg-flex">
               <div class="brand_logo">
                 <a href="#">
                   <picture>
@@ -41,17 +41,107 @@
                   </picture>
                 </a>
               </div>
-              <div class="dashboard_userWrapper">
-                <div class="user_imageWrapper">
-                  <picture>
-                    <img
-                      src="./images/user_img-1.png"
-                      alt="./images/user_img-1.png"
-                      title="image"
-                      class="img-fluid"
-                    />
-                  </picture>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="collapse_bar">
+                  <i class="fa-solid fa-bars"></i>
+                </span>
+              </button>
+              <div
+                class="dashboard_navWrapper collapse navbar-collapse"
+                id="navbarNav"
+              >
+              
+                <div class="sidebar_menuWrapper">
+                  <div class="dashboard_userWrapper">
+                    <div class="user_imageWrapper">
+                      <picture>
+                        <img
+                          src="./images/user_img-1.png"
+                          alt="./images/user_img-1.png"
+                          title="image"
+                          class="img-fluid"
+                        />
+                      </picture>
+                    </div>
+                    <div class="user_detailsWrapper">
+                      <h3 class="user_names">Sabrina Ritu</h3>
+                      <p class="user_lastLogin">
+                        Last Login:
+                        <span class="user_lastLoginDate">09 Aug, 2023</span>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="nav_menu nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">
+                        <div class="nav_icon">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill=""
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_1913_8427)">
+                              <path
+                                d="M4 13H10C10.55 13 11 12.55 11 12V4C11 3.45 10.55 3 10 3H4C3.45 3 3 3.45 3 4V12C3 12.55 3.45 13 4 13ZM4 21H10C10.55 21 11 20.55 11 20V16C11 15.45 10.55 15 10 15H4C3.45 15 3 15.45 3 16V20C3 20.55 3.45 21 4 21ZM14 21H20C20.55 21 21 20.55 21 20V12C21 11.45 20.55 11 20 11H14C13.45 11 13 11.45 13 12V20C13 20.55 13.45 21 14 21ZM13 4V8C13 8.55 13.45 9 14 9H20C20.55 9 21 8.55 21 8V4C21 3.45 20.55 3 20 3H14C13.45 3 13 3.45 13 4Z"
+                                fill=""
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1913_8427">
+                                <rect width="24" height="24" fill="" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        Dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/patient_report.html">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        Reports
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-bell"></i>
+                        </div>
+                        Notifications
+                        <span class="badge rounded-pill bg-danger">4</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./pages/upload_management.html">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-gear"></i>
+                        </div>
+                        Settings
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </div>
+                        Log Out
+                      </a>
+                    </li>
+                  </ul>
                 </div>
+<<<<<<< HEAD
                 <div class="user_detailsWrapper">
                   <h3 class="user_names">Sabrina Ritu</h3>
                   <p class="user_lastLogin">
@@ -122,6 +212,8 @@
                     </a>
                   </li>
                 </ul>
+=======
+>>>>>>> 5d14ca59a2be639a721f5e5f54cf98259b6bdeac
               </div>
             </div>
           </div>
@@ -260,8 +352,12 @@
                         <div class="row me-lg-2 mb-lg-4">
                           <div class="col-lg-12 p-0">
                             <div
+<<<<<<< HEAD
                               href="#"
                               class="bp_cardWrapper bp_grpah_wrapper"
+=======
+                              class="bp_cardWrapper bp_graph_wrapper bpPageSrc"
+>>>>>>> 5d14ca59a2be639a721f5e5f54cf98259b6bdeac
                             >
                               <div class="bp_titleWrapper">
                                 <div class="bp_logo">
@@ -351,7 +447,9 @@
                       <div class="col-lg-6 p-0 ps-lg-3">
                         <div class="row g-0 mb-lg-4">
                           <div class="col-lg-12 p-0">
-                            <div class="bp_cardWrapper sugar_cardWrapper">
+                            <div
+                              class="bp_cardWrapper sugar_cardWrapper glucosePageSrc"
+                            >
                               <div class="bp_titleWrapper">
                                 <div class="bp_logo">
                                   <picture>
@@ -383,7 +481,9 @@
                         </div>
                         <div class="row g-0 mb-lg-4">
                           <div class="col-lg-12 p-0">
-                            <div class="bp_cardWrapper sugar_cardWrapper">
+                            <div
+                              class="bp_cardWrapper sugar_cardWrapper physicalPageSrc"
+                            >
                               <div class="bp_titleWrapper">
                                 <div class="bp_logo">
                                   <picture>
@@ -614,6 +714,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/custom.js"></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
